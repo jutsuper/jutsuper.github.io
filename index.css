@@ -1,0 +1,82 @@
+:root {
+  --jutsuper-color-light-green: #BDF283;
+  --jutsuper-color-light-green-half-transparent: #BDF28380;
+  --jutsuper-color-dark-green: #9BC76C;
+  --jutsuper-color-dark-green-half-transparent: #9BC76C80;
+  --jutsuper-color-darker-green: #8CB660;
+  --jutsuper-color-darker-green-half-transparent: #8CB66080;
+}
+
+.jutsuper-no-pointer-events {
+  pointer-events: none;
+}
+
+.jutsuper-no-select {
+  user-select: none;
+}
+
+@keyframes jutsuper-anim-infinite-gradient {
+  0% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 15% 100%;
+  }
+}
+
+@keyframes jutsuper-anim-main-logo {
+  0% {
+
+  }
+}
+
+.jutsuper-disable-margins-paddings {
+  margin: 0;
+  padding: 0;
+}
+
+.jutsuper-animated-green-gradient-box {
+  animation-name: jutsuper-anim-infinite-gradient;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  background: linear-gradient(
+    45deg,
+    var(--jutsuper-color-dark-green) 0%,
+    var(--jutsuper-color-light-green) 33%,
+    var(--jutsuper-color-dark-green) 66%,
+    var(--jutsuper-color-light-green) 100%
+  );
+  background-size: 400% 400%;
+}
+
+.jutsuper-half-vh {
+  height: 50vh;
+}
+
+.jutsuper-fourth-vw {
+  width: 100vw;
+}
+
+.jutsuper-flex {
+  display: flex;
+}
+
+.jutsuper-flex-horizontal-center {
+  justify-content: center;
+}
+
+.jutsuper-flex-vertical-center {
+  align-items: center;
+}
+
+.jutsuper-bottom-rounded {
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.jutsuper-main-logo {
+  animation-name: jutsuper-anim-main-logo;
+  animation-duration: 1s;
+  filter: drop-shadow(0px 0px 80px white);
+}
