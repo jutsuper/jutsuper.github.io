@@ -42,20 +42,17 @@
 }
 
 @keyframes jutsuper-anim-switching-showcase {
-  0% {
-    content: url("./assets/showcase/automatically-skip.svg");
-  }
-  33% {
-    content: url("./assets/showcase/persistent-fullscreen.svg");
-  }
-  66% {
-    content: url("./assets/showcase/change-preferences.svg");
-  }
+
 }
 
 .jutsuper-disable-margins-paddings {
   margin: 0;
   padding: 0;
+}
+
+.jutsuper-overflows {
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .jutsuper-font-roboto {
@@ -78,12 +75,16 @@
   background-size: 400% 400%;
 }
 
-.jutsuper-half-vh {
-  height: 50vh;
+.jutsuper-fitting-height {
+  height: fit-content;
 }
 
-.jutsuper-fourth-vw {
-  width: 100vw;
+.jutsuper-full-width {
+  width: 900px;
+}
+
+.jutsuper-showcase-padding {
+  padding: 50px;
 }
 
 .jutsuper-flex {
@@ -99,37 +100,60 @@
 }
 
 .jutsuper-bottom-rounded {
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .jutsuper-main-logo {
   animation-name: jutsuper-anim-main-logo;
   animation-duration: 1s;
   filter: drop-shadow(0px 0px 80px white);
+  width: 100%;
+  min-width: 40px;
+  max-width: 100px;
+}
+
+.jutsuper-logo-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .jutsuper-switching-showcase {
-  width: 300px;
+  width: 100%;
   animation-name: jutsuper-anim-switching-showcase;
   animation-duration: 12s;
   animation-iteration-count: infinite;
   filter: drop-shadow(0px 0px 80px rgb(255, 255, 255, .2));
+  content: url("./assets/showcase/automatically-skip.svg");
 }
 
 .jutsuper-showcase-container {
   display: flex;
   flex-direction: row;
-  gap: 10vw;
+  align-items: center;
+  gap: 40px;
 }
 
 .jutsuper-showcase-visual-container {
   display: flex;
   flex-direction: column;
+  width: min-content;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .jutsuper-showcase-feature-name {
+  width: max-content;
   font-weight: bold;
-  font-size: 1.8em;
-  color: white
+  font-size: 1em;
+  color: var(--jutsuper-color-darker-green);
+  margin-bottom: 10px;
+}
+
+.jutsuper-showcase-extension-name {
+  width: max-content;
+  font-weight: bold;
+  font-size: 1em;
+  color: white;
 }
