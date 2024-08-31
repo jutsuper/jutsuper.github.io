@@ -7,6 +7,17 @@
   --jutsuper-color-darker-green-half-transparent: #8CB66080;
 }
 
+@font-face {
+  font-family: Roboto;
+  font-weight: normal;
+  src: url("./assets/font/Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: Roboto;
+  font-weight: bold;
+  src: url("./assets/font/Roboto-Bold.ttf") format("truetype");
+}
+
 .jutsuper-no-pointer-events {
   pointer-events: none;
 }
@@ -30,9 +41,26 @@
   }
 }
 
+@keyframes jutsuper-anim-switching-showcase {
+  0% {
+    content: url("./assets/showcase/automatically-skip.svg");
+  }
+  33% {
+    content: url("./assets/showcase/persistent-fullscreen.svg");
+  }
+  66% {
+    content: url("./assets/showcase/change-preferences.svg");
+  }
+}
+
 .jutsuper-disable-margins-paddings {
   margin: 0;
   padding: 0;
+}
+
+.jutsuper-font-roboto {
+  font-family: Roboto;
+  color: black;
 }
 
 .jutsuper-animated-green-gradient-box {
@@ -79,4 +107,29 @@
   animation-name: jutsuper-anim-main-logo;
   animation-duration: 1s;
   filter: drop-shadow(0px 0px 80px white);
+}
+
+.jutsuper-switching-showcase {
+  width: 300px;
+  animation-name: jutsuper-anim-switching-showcase;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  filter: drop-shadow(0px 0px 80px rgb(255, 255, 255, .2));
+}
+
+.jutsuper-showcase-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10vw;
+}
+
+.jutsuper-showcase-visual-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.jutsuper-showcase-feature-name {
+  font-weight: bold;
+  font-size: 1.8em;
+  color: white
 }
