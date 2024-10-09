@@ -47,6 +47,14 @@
 }
 
 @media screen and (max-width: 600px) {
+  #jutsuper-emblem {
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0;
+  }
+  #jutsuper-downloads {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 20px;
+  }
   #jutsuper-header {
     flex-direction: column;
   }
@@ -70,16 +78,32 @@
   user-select: none;
 }
 
-.jutsuper-padding-10px {
+.jutsuper-padding-10px.jutsuper-padding-10px {
   padding: 10px;
 }
 
-.jutsuper-padding-15px {
+.jutsuper-padding-15px.jutsuper-padding-15px {
   padding: 15px;
 }
 
-.jutsuper-gap-10px {
+.jutsuper-gap-10px.jutsuper-gap-10px {
   gap: 10px;
+}
+
+.jutsuper-no-tr-radius.jutsuper-no-tr-radius {
+  border-top-right-radius: 0;
+}
+
+.jutsuper-no-tl-radius.jutsuper-no-tl-radius {
+  border-top-left-radius: 0;
+}
+
+.jutsuper-no-br-radius.jutsuper-no-br-radius {
+  border-bottom-right-radius: 0;
+}
+
+.jutsuper-no-bl-radius.jutsuper-no-bl-radius {
+  border-bottom-left-radius: 0;
 }
 
 .jutsuper-hr {
@@ -148,15 +172,22 @@
 }
 
 .jutsuper-tile {
-  box-sizing: border-box;
+  position: relative;
   border-radius: 20px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: var(--jutsuper-color-dark-green);
   padding: 20px;
-  overflow: hidden;
-  clip-path: border-box;
-  /*box-shadow: inset 0px 00px 100px var(--jutsuper-color-light-green-25-transparent);*/
+  background-color: white;
+}
+
+.jutsuper-tile::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  border-radius: 20px;
+  box-shadow: 0px 0px 100px 10px var(--jutsuper-color-light-green-25-transparent);
 }
 
 .jutsuper-tile-button-section {
