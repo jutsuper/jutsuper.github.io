@@ -1,0 +1,7 @@
+<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="download">
+<path id="outline" d="M3 9V9C3 10.1046 3.89543 11 5 11H9C10.1046 11 11 10.1046 11 9V9" stroke="black" stroke-width="2" stroke-linejoin="round"/>
+<path id="arrow-head" d="M9.12131 5.70711L6.99999 7.82843L4.87867 5.70711" stroke="black" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+<path id="arrow-body" d="M7 7.82843V2.17157" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>

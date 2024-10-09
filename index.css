@@ -46,19 +46,67 @@
 
 }
 
-.jutsuper-disable-margins-paddings {
+@media screen and (max-width: 600px) {
+  #jutsuper-header {
+    flex-direction: column;
+  }
+}
+
+.jutsuper-no-margins.jutsuper-no-margins {
   margin: 0;
+}
+
+.jutsuper-no-padding.jutsuper-no-padding {
   padding: 0;
 }
 
-.jutsuper-overflows {
+.jutsuper-body-overflows {
   overflow-x: hidden;
   overflow-y: scroll;
+}
+
+.jutsuper-no-interactions {
+  pointer-events: none;
+  user-select: none;
+}
+
+.jutsuper-padding-10px {
+  padding: 10px;
+}
+
+.jutsuper-padding-15px {
+  padding: 15px;
+}
+
+.jutsuper-gap-10px {
+  gap: 10px;
+}
+
+.jutsuper-hr {
+  width: 2px;
+  background-color: var(--jutsuper-color-dark-green);
+  border: none;
+}
+
+.jutsuper-block {
+  display: block;
+}
+
+.jutsuper-ruby {
+  display: ruby;
+}
+
+.jutsuper-gap {
+  gap: 3px;
 }
 
 .jutsuper-font-roboto {
   font-family: Roboto;
   color: black;
+}
+
+.jutsuper-font-bold {
+  font-weight: bold;
 }
 
 .jutsuper-heading {
@@ -87,31 +135,43 @@
   height: fit-content;
 }
 
-.jutsuper-full-width {
+.jutsuper-900px-width {
   width: 900px;
+}
+
+.jutsuper-100-width {
+  width: 100%;
 }
 
 .jutsuper-header-height {
   height: 50px;
 }
 
-.jutsuper-block {
+.jutsuper-tile {
   box-sizing: border-box;
   border-radius: 20px;
   border-style: solid;
   border-width: 1px;
   border-color: var(--jutsuper-color-dark-green);
   padding: 20px;
+  overflow: hidden;
+  clip-path: border-box;
   /*box-shadow: inset 0px 00px 100px var(--jutsuper-color-light-green-25-transparent);*/
 }
 
-.jutsuper-margin-bottom {
-  margin-bottom: 20px;
+.jutsuper-tile-button-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transition: all ease 0.2s;
 }
 
-.jutsuper-showcase-padding {
-  padding-top: 30px;
-  padding-bottom: 30px;
+.jutsuper-block-button-section:hover {
+
 }
 
 .jutsuper-flex {
@@ -130,7 +190,13 @@
   flex-direction: column;
 }
 
-.jutsuper-bottom-rounded {
+.jutsuper-flex-direction-row {
+  flex-direction: row;
+}
+
+.jutsuper-rounded {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
@@ -186,7 +252,7 @@
 .jutsuper-showcase-extension-name {
   width: max-content;
   font-weight: bold;
-  font-size: xx-large;
+  font-size: 1.5em;
   color: white;
   width: 100%;
 }
