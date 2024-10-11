@@ -6,6 +6,7 @@
   --jutsuper-color-dark-green-half-transparent: #9BC76C80;
   --jutsuper-color-darker-green: #8CB660;
   --jutsuper-color-darker-green-half-transparent: #8CB66080;
+  --jutsuper-curve-fast-start-slow-end: cubic-bezier(0,.86,.24,.96);
 }
 
 @font-face {
@@ -36,25 +37,28 @@
   }
 }
 
-@keyframes jutsuper-anim-main-logo {
+@keyframes jutsuper-anim-features-scroll {
   0% {
-
+    transform: translateY(0%);
   }
-}
 
-@keyframes jutsuper-anim-switching-showcase {
+  23% { transform: translateY(0%); }
+  33% {
+    transform: translateY(-25%);
+  }
 
+  56% { transform: translateY(-25%); }
+  66% {
+    transform: translateY(-50%);
+  }
+
+  90% { transform: translateY(-50%); }
+  100% {
+    transform: translateY(-75%);
+  }
 }
 
 @media screen and (max-width: 600px) {
-  #jutsuper-emblem {
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 0;
-  }
-  #jutsuper-downloads {
-    border-top-right-radius: 0;
-    border-bottom-left-radius: 20px;
-  }
   #jutsuper-header {
     flex-direction: column;
   }
@@ -84,6 +88,14 @@
 
 .jutsuper-padding-15px.jutsuper-padding-15px {
   padding: 15px;
+}
+
+.jutsuper-l-padding-30px.jutsuper-l-padding-30px {
+  padding-left: 30px;
+}
+
+.jutsuper-r-padding-30px.jutsuper-r-padding-30px {
+  padding-right: 30px;
 }
 
 .jutsuper-gap-10px.jutsuper-gap-10px {
@@ -133,6 +145,10 @@
   font-weight: bold;
 }
 
+.jutsuper-font-white.jutsuper-font-white {
+  color: white;
+}
+
 .jutsuper-heading {
   font-size: 2em;
   font-family: Roboto;
@@ -167,18 +183,23 @@
   width: 100%;
 }
 
+.jutsuper-66-width {
+  width: 66%;
+}
+
+.jutsuper-max-content-width {
+  width: max-content;
+}
+
 .jutsuper-header-height {
   height: 50px;
 }
 
-.jutsuper-tile {
+.jutsuper-tile-glow {
   position: relative;
-  border-radius: 20px;
-  padding: 20px;
-  background-color: white;
 }
-
-.jutsuper-tile::before {
+.jutsuper-tile-glow::before {
+  overflow: visible;
   content: "";
   position: absolute;
   top: 0;
@@ -188,6 +209,14 @@
   z-index: -1;
   border-radius: 20px;
   box-shadow: 0px 0px 100px 10px var(--jutsuper-color-light-green-25-transparent);
+}
+
+.jutsuper-tile {
+  border-radius: 20px;
+  padding: 20px;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: inset var(--jutsuper-color-light-green-half-transparent) 0px 0px 0px 1px;
 }
 
 .jutsuper-tile-button-section {
@@ -201,8 +230,8 @@
   transition: all ease 0.2s;
 }
 
-.jutsuper-block-button-section:hover {
-
+.jutsuper-tile-button-section:hover {
+  box-shadow: inset 0 -6px 0px -2px var(--jutsuper-color-light-green);
 }
 
 .jutsuper-flex {
@@ -247,30 +276,12 @@
   height: 100%;
 }
 
-.jutsuper-switching-showcase {
-  width: 100%;
-  animation-name: jutsuper-anim-switching-showcase;
-  animation-duration: 12s;
-  animation-iteration-count: infinite;
-  filter: drop-shadow(0px 0px 80px rgb(255, 255, 255, .2));
-  content: url("./assets/showcase/automatically-skip.svg");
-}
-
 .jutsuper-showcase-container {
   display: flex;
   flex-direction: row;
   align-items: stretch;
   gap: 20px;
   height: 100%;
-}
-
-.jutsuper-showcase-visual-container {
-  display: flex;
-  flex-direction: column;
-  width: min-content;
-  background-color: white;
-  padding: 10px;
-  border-radius: 10px;
 }
 
 .jutsuper-showcase-feature-name {
@@ -286,4 +297,20 @@
   font-size: 1.5em;
   color: white;
   width: 100%;
+}
+
+.jutsuper-features-wrap {
+  overflow: hidden;
+  height: 2.6em;
+}
+
+.jutsuper-features-scroller {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation-name: jutsuper-anim-features-scroll;
+  /*animation-timing-function: var(--jutsuper-curve-fast-start-slow-end);*/
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-duration: 8s;
 }
