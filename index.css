@@ -1,12 +1,14 @@
 :root {
-  --jutsuper-color-light-green: #bcf283;
-  --jutsuper-color-light-green-half-transparent: #BDF28380;
-  --jutsuper-color-light-green-25-transparent: #bdf28340;
-  --jutsuper-color-dark-green: #9BC76C;
-  --jutsuper-color-dark-green-half-transparent: #9BC76C80;
-  --jutsuper-color-darker-green: #8CB660;
-  --jutsuper-color-darker-green-half-transparent: #8CB66080;
-  --jutsuper-curve-fast-start-slow-end: cubic-bezier(0,.86,.24,.96);
+  --jsp-color-light-gray: rgb(200, 200, 200);
+  --jsp-color-light-green: #bcf283;
+  --jsp-color-light-green-half-transparent: #BDF28380;
+  --jsp-color-light-green-25-transparent: #bdf28340;
+  --jsp-color-dark-green: #9BC76C;
+  --jsp-color-dark-green-half-transparent: #9BC76C80;
+  --jsp-color-darker-green: #8CB660;
+  --jsp-color-darker-green-half-transparent: #8CB66080;
+  --jsp-curve-fast-start-slow-end: cubic-bezier(0,.86,.24,.96);
+  --jsp-curve-smoother-fast-start-slow-end: cubic-bezier(.11,.88,.42,.97);
 }
 
 @font-face {
@@ -20,15 +22,15 @@
   src: url("./assets/font/Roboto-Bold.ttf") format("truetype");
 }
 
-.jutsuper-no-pointer-events {
+.jsp-no-pointer-events {
   pointer-events: none;
 }
 
-.jutsuper-no-select {
+.jsp-no-select {
   user-select: none;
 }
 
-@keyframes jutsuper-anim-infinite-gradient {
+@keyframes jsp-anim-infinite-gradient {
   0% {
     background-position: 100% 0%;
   }
@@ -37,7 +39,7 @@
   }
 }
 
-@keyframes jutsuper-anim-features-scroll {
+@keyframes jsp-anim-features-scroll {
   0% {
     transform: translateY(0%);
   }
@@ -58,147 +60,215 @@
   }
 }
 
-@media screen and (max-width: 600px) {
-  #jutsuper-header {
+@keyframes jsp-anim-showcase-white-screen {
+  0% {
+    width: 100%;
+    height: 100%;
+  }
+
+  23% {
+    width: 100%;
+    height: 100%;
+  }
+  33% {
+    width: 80%;
+    height: 70%;
+  }
+
+  56% {
+    width: 80%;
+    height: 70%;
+  }
+  66% {
+    width: 100%;
+    height: 100%;
+  }
+
+  100% {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (width <= 600px) {
+  #jsp-header {
     flex-direction: column;
   }
 }
 
-.jutsuper-no-margins.jutsuper-no-margins {
+@media screen and (width <= 540px) {
+  .jsp-features-wrap.jsp-features-wrap {
+    height: 1.8em;
+  }
+  .jsp-feature-text.jsp-feature-text {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (width <= 410px) {
+  .jsp-features-wrap.jsp-features-wrap {
+    height: 1.35em;
+  }
+  .jsp-feature-text.jsp-feature-text {
+    font-size: 1em;
+  }
+}
+
+.jsp-no-margins.jsp-no-margins {
   margin: 0;
 }
 
-.jutsuper-no-padding.jutsuper-no-padding {
+.jsp-no-padding.jsp-no-padding {
   padding: 0;
 }
 
-.jutsuper-body-overflows {
-  overflow-x: hidden;
+.jsp-body-overflows {
+  overflow-x: auto;
   overflow-y: scroll;
 }
 
-.jutsuper-no-interactions {
+.jsp-no-interactions {
   pointer-events: none;
   user-select: none;
 }
 
-.jutsuper-padding-10px.jutsuper-padding-10px {
+.jsp-padding-10px.jsp-padding-10px {
   padding: 10px;
 }
 
-.jutsuper-padding-15px.jutsuper-padding-15px {
+.jsp-padding-15px.jsp-padding-15px {
   padding: 15px;
 }
 
-.jutsuper-l-padding-30px.jutsuper-l-padding-30px {
+.jsp-l-padding-30px.jsp-l-padding-30px {
   padding-left: 30px;
 }
 
-.jutsuper-r-padding-30px.jutsuper-r-padding-30px {
+.jsp-r-padding-30px.jsp-r-padding-30px {
   padding-right: 30px;
 }
 
-.jutsuper-gap-10px.jutsuper-gap-10px {
+.jsp-gap-10px.jsp-gap-10px {
   gap: 10px;
 }
 
-.jutsuper-no-tr-radius.jutsuper-no-tr-radius {
+.jsp-no-tr-radius.jsp-no-tr-radius {
   border-top-right-radius: 0;
 }
 
-.jutsuper-no-tl-radius.jutsuper-no-tl-radius {
+.jsp-no-tl-radius.jsp-no-tl-radius {
   border-top-left-radius: 0;
 }
 
-.jutsuper-no-br-radius.jutsuper-no-br-radius {
+.jsp-no-br-radius.jsp-no-br-radius {
   border-bottom-right-radius: 0;
 }
 
-.jutsuper-no-bl-radius.jutsuper-no-bl-radius {
+.jsp-no-bl-radius.jsp-no-bl-radius {
   border-bottom-left-radius: 0;
 }
 
-.jutsuper-hr {
+.jsp-hr {
   width: 2px;
-  background-color: var(--jutsuper-color-dark-green);
+  background-color: var(--jsp-color-dark-green);
   border: none;
 }
 
-.jutsuper-block {
+.jsp-block {
   display: block;
 }
 
-.jutsuper-ruby {
+.jsp-ruby {
   display: ruby;
 }
 
-.jutsuper-gap {
+.jsp-gap {
   gap: 3px;
 }
 
-.jutsuper-font-roboto {
+.jsp-font-roboto {
   font-family: Roboto;
   color: black;
 }
 
-.jutsuper-font-bold {
+.jsp-font-bold {
   font-weight: bold;
 }
 
-.jutsuper-font-white.jutsuper-font-white {
+.jsp-pos-abs {
+  position: absolute;
+}
+
+.jsp-pos-rel {
+  position: relative;
+}
+
+.jsp-font-white.jsp-font-white {
   color: white;
 }
 
-.jutsuper-heading {
+.jsp-heading {
   font-size: 2em;
   font-family: Roboto;
   font-weight: bold;
-  color: var(--jutsuper-color-darker-green);
+  color: var(--jsp-color-darker-green);
 }
 
-.jutsuper-animated-green-gradient-box {
-  animation-name: jutsuper-anim-infinite-gradient;
+.jsp-animated-green-gradient-box {
+  animation-name: jsp-anim-infinite-gradient;
   animation-duration: 4s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   background: linear-gradient(
     45deg,
-    var(--jutsuper-color-dark-green) 0%,
-    var(--jutsuper-color-light-green) 33%,
-    var(--jutsuper-color-dark-green) 66%,
-    var(--jutsuper-color-light-green) 100%
+    var(--jsp-color-dark-green) 0%,
+    var(--jsp-color-light-green) 33%,
+    var(--jsp-color-dark-green) 66%,
+    var(--jsp-color-light-green) 100%
   );
   background-size: 400% 400%;
 }
 
-.jutsuper-fitting-height {
+.jsp-fitting-height {
   height: fit-content;
 }
 
-.jutsuper-900px-width {
+.jsp-900px-width {
   width: 900px;
 }
 
-.jutsuper-100-width {
+.jsp-100-width {
   width: 100%;
 }
 
-.jutsuper-66-width {
+.jsp-100-height {
+  height: 100%;
+}
+
+.jsp-66-width {
   width: 66%;
 }
 
-.jutsuper-max-content-width {
+.jsp-max-content-width {
   width: max-content;
 }
 
-.jutsuper-header-height {
+.jsp-overflow-auto {
+  overflow: auto;
+}
+
+.jsp-header-height {
   height: 50px;
 }
 
-.jutsuper-tile-glow {
+.jsp-height-200px {
+  height: 200px;
+}
+
+.jsp-tile-glow {
   position: relative;
 }
-.jutsuper-tile-glow::before {
+.jsp-tile-glow::before {
   overflow: visible;
   content: "";
   position: absolute;
@@ -208,18 +278,26 @@
   right: 0;
   z-index: -1;
   border-radius: 20px;
-  box-shadow: 0px 0px 100px 10px var(--jutsuper-color-light-green-25-transparent);
+  box-shadow: 0px 0px 100px 10px var(--jsp-color-light-green-25-transparent);
 }
 
-.jutsuper-tile {
+.jsp-tile {
   border-radius: 20px;
   padding: 20px;
   background-color: white;
   overflow: hidden;
-  box-shadow: inset var(--jutsuper-color-light-green-half-transparent) 0px 0px 0px 1px;
+  box-shadow: var(--jsp-color-light-green-half-transparent) 0px 0px 0px 1px;
 }
 
-.jutsuper-tile-button-section {
+.jsp-plain-tile {
+  border-radius: 20px;
+  padding: 20px;
+  background-color: white;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.jsp-tile-button-section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -230,53 +308,57 @@
   transition: all ease 0.2s;
 }
 
-.jutsuper-tile-button-section:hover {
-  box-shadow: inset 0 -6px 0px -2px var(--jutsuper-color-light-green);
+.jsp-tile-button-section:hover {
+  box-shadow: inset 0 -6px 0px -2px var(--jsp-color-light-green);
 }
 
-.jutsuper-flex {
+.jsp-flex {
   display: flex;
 }
 
-.jutsuper-flex-horizontal-center {
+.jsp-flex-horizontal-center {
   justify-content: center;
 }
 
-.jutsuper-flex-vertical-center {
+.jsp-flex-vertical-center {
   align-items: center;
 }
 
-.jutsuper-flex-direction-column {
+.jsp-flex-vertical-bottom {
+  align-items: end;
+}
+
+.jsp-flex-direction-column {
   flex-direction: column;
 }
 
-.jutsuper-flex-direction-row {
+.jsp-flex-direction-row {
   flex-direction: row;
 }
 
-.jutsuper-rounded {
+.jsp-rounded {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
 
-.jutsuper-main-logo {
-  animation-name: jutsuper-anim-main-logo;
+.jsp-main-logo {
+  animation-name: jsp-anim-main-logo;
   animation-duration: 1s;
   filter: drop-shadow(0px 0px 80px white);
   height: 100%;
   width: auto;
 }
 
-.jutsuper-description-container {
+.jsp-description-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100%;
 }
 
-.jutsuper-showcase-container {
+.jsp-showcase-container {
   display: flex;
   flex-direction: row;
   align-items: stretch;
@@ -284,14 +366,14 @@
   height: 100%;
 }
 
-.jutsuper-showcase-feature-name {
+.jsp-showcase-feature-name {
   width: max-content;
   font-size: 1em;
   color: white;
   width: 100%;
 }
 
-.jutsuper-showcase-extension-name {
+.jsp-showcase-extension-name {
   width: max-content;
   font-weight: bold;
   font-size: 1.5em;
@@ -299,18 +381,46 @@
   width: 100%;
 }
 
-.jutsuper-features-wrap {
+.jsp-features-wrap {
   overflow: hidden;
   height: 2.6em;
 }
 
-.jutsuper-features-scroller {
+.jsp-features-scroller {
   display: flex;
   flex-direction: column;
   align-items: center;
-  animation-name: jutsuper-anim-features-scroll;
-  /*animation-timing-function: var(--jutsuper-curve-fast-start-slow-end);*/
-  animation-timing-function: ease;
-  animation-iteration-count: infinite;
+  animation-name: jsp-anim-features-scroll;
   animation-duration: 8s;
+  animation-timing-function: var(--jsp-curve-smoother-fast-start-slow-end);
+  animation-iteration-count: infinite;
+}
+
+.jsp-feature-text {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 2em;
+  color: var(--jsp-color-dark-green);
+  text-shadow: red 0px 0px 0px 2px;
+}
+
+.jsp-showcase-white-screen {
+  animation-name: jsp-anim-showcase-white-screen;
+  animation-duration: 8s;
+  animation-timing-function: var(--jsp-curve-smoother-fast-start-slow-end);
+  animation-iteration-count: infinite;
+}
+
+.jsp-showcase-seekbar {
+  top: 0;
+  height: 10px;
+  width: 100%;
+  border-radius: 200px;
+}
+
+.jsp-showcase-seekbar-container {
+  width: 100%;
+  position: relative
 }

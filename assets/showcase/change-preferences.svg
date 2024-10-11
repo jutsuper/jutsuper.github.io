@@ -1,25 +1,25 @@
 <svg width="1024" height="576" viewBox="0 0 1024 576" fill="none" xmlns="http://www.w3.org/2000/svg">
   <style>
     :root {
-      --jutsuper-color-gray: #969696;
-      --jutsuper-color-light-gray: #DFDFDF;
-      --jutsuper-color-dark-gray: #282828;
-      --jutsuper-color-light-green: #BDF283;
-      --jutsuper-color-dark-green: #9BC76C;
-      --jutsuper-color-dark-green-half-transparent: #ACDD77;
-      --jutsuper-color-darker-green: #8CB660;
-      --jutsuper-color-darker-green-half-transparent: #A4D471;
+      --jsp-color-gray: #969696;
+      --jsp-color-light-gray: #DFDFDF;
+      --jsp-color-dark-gray: #282828;
+      --jsp-color-light-green: #BDF283;
+      --jsp-color-dark-green: #9BC76C;
+      --jsp-color-dark-green-half-transparent: #ACDD77;
+      --jsp-color-darker-green: #8CB660;
+      --jsp-color-darker-green-half-transparent: #A4D471;
     }
 
     @keyframes settings-third-row-selector-bg-left-anim {
       10% {
-        fill: var(--jutsuper-color-gray);
+        fill: var(--jsp-color-gray);
       }
       15% {
-        fill: var(--jutsuper-color-darker-green);
+        fill: var(--jsp-color-darker-green);
       }
       100% {
-        fill: var(--jutsuper-color-darker-green);
+        fill: var(--jsp-color-darker-green);
       }
     }
 
@@ -28,10 +28,10 @@
         width: 4%;
       }
       10% {
-        fill: var(--jutsuper-color-gray);
+        fill: var(--jsp-color-gray);
       }
       15% {
-        fill: var(--jutsuper-color-darker-green);
+        fill: var(--jsp-color-darker-green);
       }
       70% {
         width: 4%;
@@ -41,19 +41,19 @@
       }
       100% {
         width: 10%;
-        fill: var(--jutsuper-color-darker-green);
+        fill: var(--jsp-color-darker-green);
       }
     }
 
     @keyframes settings-second-row-third-row-switch-span-anim {
       55% {
-        fill: var(--jutsuper-color-gray);
+        fill: var(--jsp-color-gray);
       }
       60% {
-        fill: var(--jutsuper-color-darker-green);
+        fill: var(--jsp-color-darker-green);
       }
       100% {
-        fill: var(--jutsuper-color-darker-green);
+        fill: var(--jsp-color-darker-green);
       }
     }
 
@@ -71,13 +71,13 @@
 
     @keyframes settings-second-row-header-switch-span-anim {
       25% {
-        fill: var(--jutsuper-color-gray);
+        fill: var(--jsp-color-gray);
       }
       30% {
-        fill: var(--jutsuper-color-darker-green);
+        fill: var(--jsp-color-darker-green);
       }
       100% {
-        fill: var(--jutsuper-color-darker-green);
+        fill: var(--jsp-color-darker-green);
       }
     }
 
@@ -97,104 +97,104 @@
 
     @keyframes settings-second-row-bg-anim {
       25% {
-        fill: var(--jutsuper-color-light-gray);
+        fill: var(--jsp-color-light-gray);
       }
       30% {
-        fill: var(--jutsuper-color-light-green);
+        fill: var(--jsp-color-light-green);
       }
       100% {
-        fill: var(--jutsuper-color-light-green);
+        fill: var(--jsp-color-light-green);
       }
     }
 
 
     @keyframes settings-second-row-second-row-outline-anim {
       25% {
-        stroke: var(--jutsuper-color-gray)
+        stroke: var(--jsp-color-gray)
       }
       30% {
-        stroke: var(--jutsuper-color-darker-green)
+        stroke: var(--jsp-color-darker-green)
       }
       100% {
-        stroke: var(--jutsuper-color-darker-green)
+        stroke: var(--jsp-color-darker-green)
       }
     }
 
     @keyframes settings-second-row-first-row-selector-3-bg-anim {
       25% {
-        stroke: var(--jutsuper-color-gray)
+        stroke: var(--jsp-color-gray)
       }
       30% {
-        stroke: var(--jutsuper-color-darker-green)
+        stroke: var(--jsp-color-darker-green)
       }
       100% {
-        stroke: var(--jutsuper-color-darker-green)
+        stroke: var(--jsp-color-darker-green)
       }
     }
 
     @keyframes settings-second-row-first-row-selector-2-bg-anim {
       25% {
         fill: transparent;
-        stroke: var(--jutsuper-color-gray)
+        stroke: var(--jsp-color-gray)
       }
       30% {
-        stroke: var(--jutsuper-color-darker-green)
+        stroke: var(--jsp-color-darker-green)
       }
       40% {
         fill: transparent;
       }
       45% {
-        fill: var(--jutsuper-color-darker-green);
+        fill: var(--jsp-color-darker-green);
       }
       100% {
-        fill: var(--jutsuper-color-darker-green);
-        stroke: var(--jutsuper-color-darker-green)
+        fill: var(--jsp-color-darker-green);
+        stroke: var(--jsp-color-darker-green)
       }
     }
 
     @keyframes settings-second-row-first-row-selector-1-bg-anim {
       25% {
-        fill: var(--jutsuper-color-gray);
-        stroke: var(--jutsuper-color-gray);
+        fill: var(--jsp-color-gray);
+        stroke: var(--jsp-color-gray);
       }
       30% {
-        fill: var(--jutsuper-color-darker-green);
-        stroke: var(--jutsuper-color-darker-green);
+        fill: var(--jsp-color-darker-green);
+        stroke: var(--jsp-color-darker-green);
       }
       40% {
-        fill: var(--jutsuper-color-darker-green);
+        fill: var(--jsp-color-darker-green);
       }
       45% {
         fill: transparent;
       }
       100% {
         fill: transparent;
-        stroke: var(--jutsuper-color-darker-green);
+        stroke: var(--jsp-color-darker-green);
       }
     }
 
 
     @keyframes settings-third-row-selector-outline-anim {
       10% {
-        stroke: var(--jutsuper-color-gray)
+        stroke: var(--jsp-color-gray)
       }
       15% {
-        stroke: var(--jutsuper-color-darker-green)
+        stroke: var(--jsp-color-darker-green)
       }
       100% {
-        stroke: var(--jutsuper-color-darker-green)
+        stroke: var(--jsp-color-darker-green)
       }
     }
 
     @keyframes settings-first-row-switch-span-anim {
       10% {
-        fill: var(--jutsuper-color-gray);
+        fill: var(--jsp-color-gray);
       }
       15% {
-        fill: var(--jutsuper-color-darker-green);
+        fill: var(--jsp-color-darker-green);
       }
       100% {
-        fill: var(--jutsuper-color-darker-green);
+        fill: var(--jsp-color-darker-green);
       }
     }
 
