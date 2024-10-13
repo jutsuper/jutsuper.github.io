@@ -31,63 +31,58 @@
 }
 
 @keyframes jsp-anim-infinite-gradient {
-  0% {
-    background-position: 100% 0%;
-  }
-  100% {
-    background-position: 15% 100%;
-  }
+  0% { background-position: 100% 0% }
+  100% { background-position: 15% 100% }
 }
 
 @keyframes jsp-anim-features-scroll {
-  0% {
-    transform: translateY(0%);
-  }
-
-  23% { transform: translateY(0%); }
-  33% {
-    transform: translateY(-25%);
-  }
-
-  56% { transform: translateY(-25%); }
-  66% {
-    transform: translateY(-50%);
-  }
-
-  90% { transform: translateY(-50%); }
-  100% {
-    transform: translateY(-75%);
-  }
+  0%, 23% { transform: translateY(0%) }
+  33%, 56% { transform: translateY(-25%) }
+  66%, 90% { transform: translateY(-50%) }
+  100% { transform: translateY(-75%) }
 }
 
 @keyframes jsp-anim-showcase-white-screen {
-  0% {
+  0%, 23% {
     width: 100%;
     height: 100%;
   }
-
-  23% {
-    width: 100%;
-    height: 100%;
-  }
-  33% {
+  33%, 56% {
     width: 80%;
     height: 70%;
   }
-
-  56% {
-    width: 80%;
-    height: 70%;
-  }
-  66% {
+  66%, 100% {
     width: 100%;
     height: 100%;
   }
+}
 
+@keyframes jsp-anim-showcase-seekbar {
+  0% { width: 6% }
+  23% { width: 20% }
+  90% { width: 94% }
+  100% { width: 6% }
+}
+
+@keyframes jsp-anim-stripes {
   100% {
-    width: 100%;
-    height: 100%;
+    background-position: 20% 20%;
   }
+}
+
+@keyframes jsp-anim-showcase-arrow-blink {
+  0% { opacity: 100% }
+  100% { opacity: 0% }
+}
+
+@keyframes jsp-anim-showcase-left-skip-arrows-appearance {
+  0%, 10% { opacity: 100% }
+  11%, 100% { opacity: 0% }
+}
+
+@keyframes jsp-anim-showcase-right-skip-arrows-appearance {
+  0%, 85% { opacity: 0% }
+  86%, 100% { opacity: 100% }
 }
 
 @media screen and (width <= 600px) {
@@ -423,4 +418,83 @@
 .jsp-showcase-seekbar-container {
   width: 100%;
   position: relative
+}
+
+.jsp-showcase-seekbar-anim {
+  animation-name: jsp-anim-showcase-seekbar;
+  animation-duration: 8s;
+  animation-timing-function: var(--jsp-curve-smoother-fast-start-slow-end);
+  animation-iteration-count: infinite;
+}
+
+.jsp-outline-green-1px {
+  box-shadow: inset var(--jsp-color-light-green) 0px 0px 0px 1px
+}
+
+.jsp-white-bg {
+  background-color: white;
+}
+
+.jsp-stripes {
+  background: repeating-linear-gradient(
+    -60deg,
+    var(--jsp-color-light-green),
+    var(--jsp-color-light-green) 1px,
+    white 1px,
+    white 20px
+  );
+  background-size: 200% 200%;
+  animation-name: jsp-anim-stripes;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+
+.jsp-showcase-skipping-arrows-left {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 16px;
+  height: 100%;
+  animation-name: jsp-anim-showcase-left-skip-arrows-appearance;
+  animation-duration: 8s;
+  animation-timing-function: var(--jsp-curve-smoother-fast-start-slow-end);
+  animation-iteration-count: infinite;
+}
+
+.jsp-showcase-skipping-arrows-right {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 16px;
+  height: 100%;
+  animation-name: jsp-anim-showcase-right-skip-arrows-appearance;
+  animation-duration: 8s;
+  animation-timing-function: var(--jsp-curve-smoother-fast-start-slow-end);
+  animation-iteration-count: infinite;
+}
+
+.jsp-showcase-skipping-arrow-1 {
+  animation-name: jsp-anim-showcase-arrow-blink;
+  animation-duration: 1s;
+  animation-timing-function: var(--jsp-curve-smoother-fast-start-slow-end);
+  animation-iteration-count: infinite;
+  animation-delay: 0ms;
+}
+
+.jsp-showcase-skipping-arrow-2 {
+  animation-name: jsp-anim-showcase-arrow-blink;
+  animation-duration: 1s;
+  animation-timing-function: var(--jsp-curve-smoother-fast-start-slow-end);
+  animation-iteration-count: infinite;
+  animation-delay: 50ms;
+}
+
+.jsp-showcase-skipping-arrow-3 {
+  animation-name: jsp-anim-showcase-arrow-blink;
+  animation-duration: 1s;
+  animation-timing-function: var(--jsp-curve-smoother-fast-start-slow-end);
+  animation-iteration-count: infinite;
+  animation-delay: 100ms;
 }
