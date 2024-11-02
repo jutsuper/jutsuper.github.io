@@ -23,11 +23,11 @@
           <div class="jsp-flex jsp-flex-direction-row jsp-100-width">
             <div class="jsp-tile-button-section">
               <div class="jsp-padding-15px">
-                <div class="jsp-flex jsp-gap jsp-flex-horizontal-center">
+                <div class="jsp-flex jsp-gap-3px jsp-flex-horizontal-center">
                   <img class="jsp-no-interactions jsp-display-block" src="/assets/icon/download.svg">
                   <h class="jsp-ruby">Chromium</h>
                 </div>
-                <div class="jsp-flex jsp-gap jsp-flex-horizontal-center">
+                <div class="jsp-flex jsp-gap-3px jsp-flex-horizontal-center">
                   <img class="jsp-no-interactions jsp-display-block" src="/assets/3rd/chrome.svg" height="24px">
                   <img class="jsp-no-interactions jsp-display-block" src="/assets/3rd/edge.svg" height="24px">
                   <img class="jsp-no-interactions jsp-display-block" src="/assets/3rd/opera.svg" height="24px">
@@ -38,11 +38,11 @@
             <hr class="jsp-hr">
             <div class="jsp-tile-button-section">
               <div class="jsp-padding-15px">
-                <div class="jsp-flex jsp-gap jsp-flex-horizontal-center">
+                <div class="jsp-flex jsp-gap-3px jsp-flex-horizontal-center">
                   <img class="jsp-no-interactions jsp-display-block" src="/assets/icon/download.svg">
                   <h class="jsp-ruby">Firefox</h>
                 </div>
-                <div class="jsp-flex jsp-gap jsp-flex-horizontal-center">
+                <div class="jsp-flex jsp-gap-3px jsp-flex-horizontal-center">
                   <img class="jsp-no-interactions jsp-display-block" src="/assets/3rd/firefox.svg" height="24px">
                 </div>
               </div>
@@ -53,7 +53,7 @@
       <div class="jsp-tile-glow">
         <div class="jsp-tile jsp-no-padding jsp-height-200px jsp-stripes jsp-no-interactions">
           <div class="jsp-flex jsp-flex-vertical-center jsp-flex-horizontal-center jsp-pos-abs jsp-100-width jsp-100-height">
-            <div class="jsp-flex jsp-showcase-white-screen jsp-plain-tile jsp-flex-vertical-bottom jsp-pos-rel">
+            <div class="jsp-flex jsp-flex-direction-column jsp-showcase-white-screen jsp-plain-tile jsp-flex-vertical-bottom jsp-pos-rel">
               <div class="jsp-showcase-skipping-arrows-left">
                 <img class="jsp-showcase-skipping-arrow-1" src="/assets/icon/play-nm.svg" width="12px">
                 <img class="jsp-showcase-skipping-arrow-2" src="/assets/icon/play-nm.svg" width="12px">
@@ -64,26 +64,34 @@
                 <img class="jsp-showcase-skipping-arrow-2" src="/assets/icon/play-nm.svg" width="12px">
                 <img class="jsp-showcase-skipping-arrow-3" src="/assets/icon/play-nm.svg" width="12px">
               </div>
+              <div class="jsp-100-width jsp-100-height jsp-margin-bottom-16px jsp-overflow-hidden jsp-pos-rel">
+                <div class="jsp-showcase-preferences-container jsp-showcase-preferences-anim">
+                  <div class="jsp-showcase-preferences">
+                    <div class="jsp-flex jsp-flex-direction-row jsp-flex-vertical-center jsp-padding-10px jsp-padding-bottom-5px">
+                      <div class="jsp-showcase-preferences-switch jsp-showcase-openings-switch-anim jsp-margin-right-10px">
+                        <div class="jsp-showcase-preferences-switch-thumb jsp-showcase-openings-switch-thumb-anim"></div>
+                      </div>
+                      <div class="jsp-showcase-string-skeleton"></div>
+                    </div>
+                    <div class="jsp-flex jsp-flex-direction-row jsp-flex-vertical-center jsp-padding-10px jsp-padding-top-5px jsp-light-green-bg">
+                      <div class="jsp-showcase-preferences-switch jsp-margin-right-10px">
+                        <div class="jsp-showcase-preferences-switch-thumb jsp-showcase-endings-switch-thumb-anim"></div>
+                      </div>
+                      <div class="jsp-showcase-string-skeleton"></div>
+                    </div>
+                    <div class="jsp-showcase-preferences-endings-fill"></div>
+                    <div class="jsp-padding-10px">
+                      <div class="jsp-showcase-seekbar-container">
+                        <div class="jsp-showcase-preferences-slider jsp-outline-green-1px"></div>
+                        <div class="jsp-showcase-preferences-slider jsp-pos-abs jsp-top-0 jsp-animated-green-gradient-box jsp-showcase-preferences-slider-fill-anim"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div class="jsp-showcase-seekbar-container">
-                <div class="jsp-showcase-seekbar"></div>
-                <div style="width: 50%">
-                  <div>
-                    <div class="jsp-showcase-seekbar jsp-outline-green-1px jsp-white-bg jsp-pos-abs"></div>
-                    <div class="jsp-showcase-seekbar jsp-pos-abs jsp-animated-green-gradient-box"></div>
-                  </div>
-                  <div>
-                    <div class="jsp-showcase-seekbar jsp-outline-green-1px jsp-white-bg jsp-pos-abs"></div>
-                    <div class="jsp-showcase-seekbar jsp-pos-abs jsp-animated-green-gradient-box"></div>
-                  </div>
-                </div>
-                <div>
-                  <div class="jsp-showcase-seekbar jsp-outline-green-1px jsp-white-bg jsp-pos-abs"></div>
-                  <div class="jsp-showcase-seekbar jsp-pos-abs jsp-animated-green-gradient-box"></div>
-                </div>
-                <div>
-                  <div class="jsp-showcase-seekbar jsp-outline-green-1px jsp-white-bg jsp-pos-abs"></div>
-                  <div class="jsp-showcase-seekbar jsp-pos-abs jsp-animated-green-gradient-box jsp-showcase-seekbar-anim"></div>
-                </div>
+                <div class="jsp-showcase-seekbar jsp-outline-green-1px jsp-white-bg"></div>
+                <div class="jsp-showcase-seekbar jsp-pos-abs jsp-top-0 jsp-animated-green-gradient-box jsp-showcase-seekbar-anim"></div>
               </div>
             </div>
           </div>

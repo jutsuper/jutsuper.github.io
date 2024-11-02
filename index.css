@@ -85,6 +85,44 @@
   86%, 100% { opacity: 100% }
 }
 
+@keyframes jsp-anim-showcase-preferences-appear {
+  0%, 56% {
+    opacity: 0;
+    height: 0%;
+  }
+  66%, 84% {
+    opacity: 1;
+    height: 100%;
+  }
+  90%, 100% {
+    opacity: 0;
+    height: 0%;
+  }
+}
+
+@keyframes jsp-anim-showcase-preferences-openings-switch-thumb {
+  0%, 66% {
+    transform: translateX(0);
+    background-color: white;
+  }
+  72%, 100% {
+    transform: translateX(24px);
+    background-color: var(--jsp-color-light-green);
+  }
+}
+
+@keyframes jsp-anim-showcase-preferences-endings-switch-thumb {
+  0%, 100% {
+    transform: translateX(24px);
+    background-color: var(--jsp-color-light-green);
+  }
+}
+
+@keyframes jsp-anim-showcase-preferences-delay-slider {
+  0%, 72% { width: 20%; }
+  86%, 100% { width: 70%; }
+}
+
 @media screen and (width <= 600px) {
   #jsp-header {
     flex-direction: column;
@@ -127,8 +165,24 @@
   user-select: none;
 }
 
+.jsp-padding-top-5px.jsp-padding-top-5px.jsp-padding-top-5px {
+  padding-top: 5px;
+}
+
+.jsp-padding-bottom-5px.jsp-padding-bottom-5px.jsp-padding-bottom-5px {
+  padding-bottom: 5px;
+}
+
 .jsp-padding-10px.jsp-padding-10px {
   padding: 10px;
+}
+
+.jsp-no-top-padding.jsp-no-top-padding {
+  padding-top: 0;
+}
+
+.jsp-no-bottom-padding.jsp-no-bottom-padding {
+  padding-bottom: 0;
 }
 
 .jsp-padding-15px.jsp-padding-15px {
@@ -177,7 +231,7 @@
   display: ruby;
 }
 
-.jsp-gap {
+.jsp-gap-3px {
   gap: 3px;
 }
 
@@ -200,6 +254,22 @@
 
 .jsp-font-white.jsp-font-white {
   color: white;
+}
+
+.jsp-light-green-bg {
+  background-color: var(--jsp-color-light-green);
+}
+
+.jsp-top-0 {
+  top: 0;
+}
+
+.jsp-margin-bottom-16px {
+  margin-bottom: 16px;
+}
+
+.jsp-overflow-hidden {
+  overflow: hidden;
 }
 
 .jsp-heading {
@@ -331,6 +401,10 @@
   flex-direction: row;
 }
 
+.jsp-margin-right-10px {
+  margin-right: 10px;
+}
+
 .jsp-rounded {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -379,12 +453,16 @@
 .jsp-features-wrap {
   overflow: hidden;
   height: 2.6em;
+  border-radius: 50px;
 }
 
 .jsp-features-scroller {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: white;
+  padding-left: 10px;
+  padding-right: 10px;
   animation-name: jsp-anim-features-scroll;
   animation-duration: 8s;
   animation-timing-function: var(--jsp-curve-smoother-fast-start-slow-end);
@@ -399,6 +477,7 @@
   font-size: 2em;
   color: var(--jsp-color-dark-green);
   text-shadow: red 0px 0px 0px 2px;
+  border-radius: 50px;
 }
 
 .jsp-showcase-white-screen {
@@ -409,7 +488,6 @@
 }
 
 .jsp-showcase-seekbar {
-  top: 0;
   height: 10px;
   width: 100%;
   border-radius: 200px;
@@ -449,6 +527,98 @@
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: reverse;
+}
+
+.jsp-showcase-preferences-container {
+  display: flex;
+  width: fit-content;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: inset var(--jsp-color-light-green) 0px 0px 0px 1px;
+}
+
+.jsp-showcase-preferences {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.jsp-showcase-preferences-anim {
+  animation-name: jsp-anim-showcase-preferences-appear;
+  animation-duration: 8s;
+  animation-timing-function: var(--jsp-curve-smoother-fast-start-slow-end);
+  animation-iteration-count: infinite;
+}
+
+.jsp-showcase-preferences-switch {
+  position: relative;
+  width: 44px;
+  height: 20px;
+  border-radius: 50px;
+  background-color: white;
+  box-shadow: var(--jsp-color-light-green) 0px 0px 0px 1px;
+}
+
+.jsp-showcase-preferences-switch-thumb {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  border-radius: 50px;
+  box-shadow: var(--jsp-color-light-green) 0px 0px 0px 1px;
+}
+
+.jsp-showcase-openings-switch-thumb-anim {
+  animation-name: jsp-anim-showcase-preferences-openings-switch-thumb;
+  animation-duration: 8s;
+  animation-timing-function: var(--jsp-curve-smoother-fast-start-slow-end);
+  animation-iteration-count: infinite;
+}
+
+.jsp-showcase-endings-switch-thumb-anim {
+  animation-name: jsp-anim-showcase-preferences-endings-switch-thumb;
+  animation-duration: 8s;
+  animation-timing-function: var(--jsp-curve-smoother-fast-start-slow-end);
+  animation-iteration-count: infinite;
+}
+
+.jsp-showcase-string-skeleton {
+  height: 12px;
+  width: 70px;
+  border-radius: 50px;
+  box-shadow: var(--jsp-color-light-green) 0px 0px 0px 1px;
+  background: repeating-linear-gradient(
+    -60deg,
+    var(--jsp-color-light-green),
+    var(--jsp-color-light-green) 1px,
+    white 1px,
+    white 6px
+  );
+}
+
+.jsp-showcase-preferences-endings-fill {
+  height: 100%;
+  width: 100%;
+  background-color: var(--jsp-color-light-green);
+}
+
+.jsp-showcase-preferences-slider {
+  width: 100%;
+  min-height: 18px;
+  border-radius: 50px;
+}
+
+.jsp-showcase-preferences-slider-fill-anim {
+  animation-name: jsp-anim-showcase-preferences-delay-slider;
+  animation-duration: 8s;
+  animation-timing-function: var(--jsp-curve-smoother-fast-start-slow-end);
+  animation-iteration-count: infinite;
 }
 
 .jsp-showcase-skipping-arrows-left {
