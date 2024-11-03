@@ -7,6 +7,7 @@
   --jsp-color-dark-green-half-transparent: #9BC76C80;
   --jsp-color-darker-green: #8CB660;
   --jsp-color-darker-green-half-transparent: #8CB66080;
+  --jsp-dur-slow: .50s;
   --jsp-curve-fast-start-slow-end: cubic-bezier(0,.86,.24,.96);
   --jsp-curve-smoother-fast-start-slow-end: cubic-bezier(.11,.88,.42,.97);
 }
@@ -85,16 +86,27 @@
   86%, 100% { opacity: 100% }
 }
 
+@keyframes jsp-anim-showcase-skipping-notif-appear {
+  0% { height: 0px; }
+  8%, 23% { height: 32px; }
+  30%, 100% { height: 0px; }
+}
+
+@keyframes jsp-anim-showcase-skipping-notif-slide {
+  0% { width: 100%; }
+  23%, 100% { width: 0%; }
+}
+
 @keyframes jsp-anim-showcase-preferences-appear {
   0%, 56% {
     opacity: 0;
     height: 0%;
   }
-  66%, 84% {
+  66%, 90% {
     opacity: 1;
     height: 100%;
   }
-  90%, 100% {
+  100% {
     opacity: 0;
     height: 0%;
   }
@@ -124,26 +136,8 @@
 }
 
 @media screen and (width <= 600px) {
-  #jsp-header {
+  #jsp-showcase-download-tiles {
     flex-direction: column;
-  }
-}
-
-@media screen and (width <= 540px) {
-  .jsp-features-wrap.jsp-features-wrap {
-    height: 1.8em;
-  }
-  .jsp-feature-text.jsp-feature-text {
-    font-size: 1.5em;
-  }
-}
-
-@media screen and (width <= 410px) {
-  .jsp-features-wrap.jsp-features-wrap {
-    height: 1.35em;
-  }
-  .jsp-feature-text.jsp-feature-text {
-    font-size: 1em;
   }
 }
 
@@ -160,6 +154,18 @@
   overflow-y: scroll;
 }
 
+.jsp-hyperlink {
+  color: var(--jsp-color-dark-green)
+}
+
+.jsp-paragraph {
+  margin: 0;
+}
+
+.jsp-display-none {
+  display: none;
+}
+
 .jsp-no-interactions {
   pointer-events: none;
   user-select: none;
@@ -173,20 +179,44 @@
   padding-bottom: 5px;
 }
 
+.jsp-padding-5px.jsp-padding-5px {
+  padding: 5px;
+}
+
 .jsp-padding-10px.jsp-padding-10px {
   padding: 10px;
 }
 
-.jsp-no-top-padding.jsp-no-top-padding {
+.jsp-no-top-padding.jsp-no-top-padding.jsp-no-top-padding {
   padding-top: 0;
 }
 
-.jsp-no-bottom-padding.jsp-no-bottom-padding {
+.jsp-no-bottom-padding.jsp-no-bottom-padding.jsp-no-bottom-padding {
   padding-bottom: 0;
+}
+
+.jsp-no-left-padding.jsp-no-left-padding.jsp-no-left-padding {
+  padding-left: 0;
+}
+
+.jsp-no-right-padding.jsp-no-right-padding.jsp-no-right-padding {
+  padding-right: 0;
 }
 
 .jsp-padding-15px.jsp-padding-15px {
   padding: 15px;
+}
+
+.jsp-l-padding-15px.jsp-l-padding-15px {
+  padding-left: 15px;
+}
+
+.jsp-r-padding-15px.jsp-r-padding-15px {
+  padding-right: 15px;
+}
+
+.jsp-padding-20px.jsp-padding-20px {
+  padding: 20px;
 }
 
 .jsp-l-padding-30px.jsp-l-padding-30px {
@@ -272,10 +302,15 @@
   overflow: hidden;
 }
 
+.jsp-border-box-sizing {
+  box-sizing: border-box;
+}
+
 .jsp-heading {
-  font-size: 2em;
+  font-size: 1.5em;
   font-family: Roboto;
   font-weight: bold;
+  margin-bottom: 0.5em;
   color: var(--jsp-color-darker-green);
 }
 
@@ -323,7 +358,7 @@
 }
 
 .jsp-header-height {
-  height: 50px;
+  height: 24px;
 }
 
 .jsp-height-200px {
@@ -412,18 +447,12 @@
   border-bottom-right-radius: 20px;
 }
 
-.jsp-main-logo {
-  animation-name: jsp-anim-main-logo;
-  animation-duration: 1s;
-  filter: drop-shadow(0px 0px 80px white);
-  height: 100%;
-  width: auto;
-}
-
 .jsp-description-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  gap: 10px;
   height: 100%;
 }
 
@@ -431,28 +460,34 @@
   display: flex;
   flex-direction: row;
   align-items: stretch;
-  gap: 20px;
+  gap: 10px;
   height: 100%;
 }
 
-.jsp-showcase-feature-name {
+.jsp-showcase-extension-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: max-content;
-  font-size: 1em;
+  height: 100%;
+  font-weight: bold;
+  font-size: 1.4em;
   color: white;
-  width: 100%;
 }
 
-.jsp-showcase-extension-name {
+.jsp-showcase-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: max-content;
-  font-weight: bold;
-  font-size: 1.5em;
+  height: 100%;
+  font-size: 1em;
   color: white;
-  width: 100%;
 }
 
 .jsp-features-wrap {
   overflow: hidden;
-  height: 2.6em;
+  height: 1.8em;
   border-radius: 50px;
 }
 
@@ -474,7 +509,7 @@
   display: flex;
   align-items: center;
   font-weight: bold;
-  font-size: 2em;
+  font-size: 1.4em;
   color: var(--jsp-color-dark-green);
   text-shadow: red 0px 0px 0px 2px;
   border-radius: 50px;
@@ -506,7 +541,7 @@
 }
 
 .jsp-outline-green-1px {
-  box-shadow: inset var(--jsp-color-light-green) 0px 0px 0px 1px
+  box-shadow: inset var(--jsp-color-light-green) 0px 0px 0px 1px;
 }
 
 .jsp-white-bg {
@@ -527,6 +562,38 @@
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: reverse;
+}
+
+.jsp-showcase-skipping-notif-container {
+  width: fit-content;
+  border-radius: 12px;
+  box-shadow: inset var(--jsp-color-light-green) 0px 0px 0px 1px;
+  overflow: hidden;
+}
+
+.jsp-showcase-skipping-notif-appear-anim {
+  animation-name: jsp-anim-showcase-skipping-notif-appear;
+  animation-duration: 8s;
+  animation-timing-function: var(--jsp-curve-smoother-fast-start-slow-end);
+  animation-iteration-count: infinite;
+}
+
+.jsp-showcase-skipping-notif-content {
+  padding: 8px;
+  padding-bottom: 4px;
+}
+
+.jsp-showcase-skipping-notif-line {
+  width: 100%;
+  height: 6px;
+  background-color: var(--jsp-color-light-green);
+}
+
+.jsp-showcase-skipping-notif-line-anim {
+  animation-name: jsp-anim-showcase-skipping-notif-slide;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
 .jsp-showcase-preferences-container {
@@ -667,4 +734,43 @@
   animation-timing-function: var(--jsp-curve-smoother-fast-start-slow-end);
   animation-iteration-count: infinite;
   animation-delay: 100ms;
+}
+
+.jsp-faq-dropdown {
+  width: 14px;
+  transition: all var(--jsp-dur-slow) var(--jsp-curve-fast-start-slow-end)
+}
+
+.jsp-faq-bar-switch:checked + label .jsp-faq-dropdown {
+  transform: rotate(180deg);
+}
+
+.jsp-faq-bar {
+  height: 40px;
+}
+
+.jsp-faq-bar-switch + label {
+  height: 100%;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: var(--jsp-dur-slow) var(--jsp-curve-fast-start-slow-end);
+}
+
+.jsp-faq-bar-switch:checked + label {
+  box-shadow: inset 0 -6px 0px -5px var(--jsp-color-light-green);
+}
+
+.jsp-faq-bar + div {
+  display: grid;
+  grid-template-rows: 0fr;
+  overflow: hidden;
+  transition: var(--jsp-dur-slow) var(--jsp-curve-fast-start-slow-end);
+}
+
+.jsp-faq-bar + div div {
+  overflow: hidden;
+}
+
+.jsp-faq-bar:has(.jsp-faq-bar-switch:checked) + div {
+  grid-template-rows: 1fr;
 }

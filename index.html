@@ -10,116 +10,232 @@
   <div class="jsp-flex jsp-flex-horizontal-center">
     <div class="jsp-flex jsp-flex-horizontal-center jsp-flex-direction-column jsp-900px-width jsp-gap-10px">
       <div class="jsp-tile-glow">
-        <div id="jsp-header" class="jsp-tile jsp-no-padding jsp-flex jsp-flex-direction-row">
-          <div id="jsp-emblem" class="jsp-animated-green-gradient-box jsp-header-height jsp-flex jsp-flex-horizontal-center jsp-flex-vertical-center jsp-padding-15px jsp-l-padding-30px jsp-r-padding-30px">
+        <div id="jsp-header" class="jsp-tile jsp-no-padding">
+          <div id="jsp-emblem" class="jsp-animated-green-gradient-box jsp-header-height jsp-flex jsp-flex-vertical-center jsp-padding-15px jsp-l-padding-30px jsp-r-padding-30px">
             <div class="jsp-showcase-container">
-              <img class="jsp-main-logo jsp-no-interactions" src="/assets/logo/square-white-128.svg">
+              <img class="jsp-no-interactions" src="/assets/logo/square-white-128.svg">
               <div class="jsp-description-container">
                 <h class="jsp-showcase-extension-name">JutSuper</h>
-                <h class="jsp-showcase-feature-name">for jut.su</h>
-              </div>
-            </div>
-          </div>
-          <div class="jsp-flex jsp-flex-direction-row jsp-100-width">
-            <div class="jsp-tile-button-section">
-              <div class="jsp-padding-15px">
-                <div class="jsp-flex jsp-gap-3px jsp-flex-horizontal-center">
-                  <img class="jsp-no-interactions jsp-display-block" src="/assets/icon/download.svg">
-                  <h class="jsp-ruby">Chromium</h>
-                </div>
-                <div class="jsp-flex jsp-gap-3px jsp-flex-horizontal-center">
-                  <img class="jsp-no-interactions jsp-display-block" src="/assets/3rd/chrome.svg" height="24px">
-                  <img class="jsp-no-interactions jsp-display-block" src="/assets/3rd/edge.svg" height="24px">
-                  <img class="jsp-no-interactions jsp-display-block" src="/assets/3rd/opera.svg" height="24px">
-                  <img class="jsp-no-interactions jsp-display-block" src="/assets/3rd/yandex.svg" height="24px">
-                </div>
-              </div>
-            </div>
-            <hr class="jsp-hr">
-            <div class="jsp-tile-button-section">
-              <div class="jsp-padding-15px">
-                <div class="jsp-flex jsp-gap-3px jsp-flex-horizontal-center">
-                  <img class="jsp-no-interactions jsp-display-block" src="/assets/icon/download.svg">
-                  <h class="jsp-ruby">Firefox</h>
-                </div>
-                <div class="jsp-flex jsp-gap-3px jsp-flex-horizontal-center">
-                  <img class="jsp-no-interactions jsp-display-block" src="/assets/3rd/firefox.svg" height="24px">
-                </div>
+                <h class="jsp-showcase-description">for jut.su</h>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="jsp-tile-glow">
-        <div class="jsp-tile jsp-no-padding jsp-height-200px jsp-stripes jsp-no-interactions">
-          <div class="jsp-flex jsp-flex-vertical-center jsp-flex-horizontal-center jsp-pos-abs jsp-100-width jsp-100-height">
-            <div class="jsp-flex jsp-flex-direction-column jsp-showcase-white-screen jsp-plain-tile jsp-flex-vertical-bottom jsp-pos-rel">
-              <div class="jsp-showcase-skipping-arrows-left">
-                <img class="jsp-showcase-skipping-arrow-1" src="/assets/icon/play-nm.svg" width="12px">
-                <img class="jsp-showcase-skipping-arrow-2" src="/assets/icon/play-nm.svg" width="12px">
-                <img class="jsp-showcase-skipping-arrow-3" src="/assets/icon/play-nm.svg" width="12px">
-              </div>
-              <div class="jsp-showcase-skipping-arrows-right">
-                <img class="jsp-showcase-skipping-arrow-1" src="/assets/icon/play-nm.svg" width="12px">
-                <img class="jsp-showcase-skipping-arrow-2" src="/assets/icon/play-nm.svg" width="12px">
-                <img class="jsp-showcase-skipping-arrow-3" src="/assets/icon/play-nm.svg" width="12px">
-              </div>
-              <div class="jsp-100-width jsp-100-height jsp-margin-bottom-16px jsp-overflow-hidden jsp-pos-rel">
-                <div class="jsp-showcase-preferences-container jsp-showcase-preferences-anim">
-                  <div class="jsp-showcase-preferences">
-                    <div class="jsp-flex jsp-flex-direction-row jsp-flex-vertical-center jsp-padding-10px jsp-padding-bottom-5px">
-                      <div class="jsp-showcase-preferences-switch jsp-showcase-openings-switch-anim jsp-margin-right-10px">
-                        <div class="jsp-showcase-preferences-switch-thumb jsp-showcase-openings-switch-thumb-anim"></div>
+      <div id="jsp-showcase-download-tiles" class="jsp-flex jsp-flex-direction-row jsp-gap-10px">
+        <div class="jsp-tile-glow jsp-100-width">
+          <div class="jsp-tile jsp-no-padding jsp-height-200px jsp-stripes jsp-no-interactions">
+            <div class="jsp-flex jsp-flex-vertical-center jsp-flex-horizontal-center jsp-pos-abs jsp-100-width jsp-100-height">
+              <div class="jsp-flex jsp-flex-direction-column jsp-showcase-white-screen jsp-plain-tile jsp-flex-vertical-bottom jsp-pos-rel">
+                <div class="jsp-100-width jsp-100-height jsp-margin-bottom-16px jsp-overflow-hidden jsp-pos-rel">
+                  <div class="jsp-showcase-skipping-notif-container jsp-showcase-skipping-notif-appear-anim">
+                    <div class="jsp-showcase-skipping-notif-content">
+                      <div class="jsp-flex jsp-flex-direction-row">
+                        <img src="/assets/icon/skip-light-green.svg" style="margin-right: 4px;">
+                        <div class="jsp-showcase-string-skeleton"></div>
                       </div>
-                      <div class="jsp-showcase-string-skeleton"></div>
                     </div>
-                    <div class="jsp-flex jsp-flex-direction-row jsp-flex-vertical-center jsp-padding-10px jsp-padding-top-5px jsp-light-green-bg">
-                      <div class="jsp-showcase-preferences-switch jsp-margin-right-10px">
-                        <div class="jsp-showcase-preferences-switch-thumb jsp-showcase-endings-switch-thumb-anim"></div>
+                    <div class="jsp-showcase-skipping-notif-line jsp-showcase-skipping-notif-line-anim"></div>
+                  </div>
+                  <div class="jsp-showcase-preferences-container jsp-showcase-preferences-anim">
+                    <div class="jsp-showcase-preferences">
+                      <div class="jsp-flex jsp-flex-direction-row jsp-flex-vertical-center jsp-padding-10px jsp-padding-bottom-5px">
+                        <div class="jsp-showcase-preferences-switch jsp-showcase-openings-switch-anim jsp-margin-right-10px">
+                          <div class="jsp-showcase-preferences-switch-thumb jsp-showcase-openings-switch-thumb-anim"></div>
+                        </div>
+                        <div class="jsp-showcase-string-skeleton"></div>
                       </div>
-                      <div class="jsp-showcase-string-skeleton"></div>
-                    </div>
-                    <div class="jsp-showcase-preferences-endings-fill"></div>
-                    <div class="jsp-padding-10px">
-                      <div class="jsp-showcase-seekbar-container">
-                        <div class="jsp-showcase-preferences-slider jsp-outline-green-1px"></div>
-                        <div class="jsp-showcase-preferences-slider jsp-pos-abs jsp-top-0 jsp-animated-green-gradient-box jsp-showcase-preferences-slider-fill-anim"></div>
+                      <div class="jsp-flex jsp-flex-direction-row jsp-flex-vertical-center jsp-padding-10px jsp-padding-top-5px jsp-light-green-bg">
+                        <div class="jsp-showcase-preferences-switch jsp-margin-right-10px">
+                          <div class="jsp-showcase-preferences-switch-thumb jsp-showcase-endings-switch-thumb-anim"></div>
+                        </div>
+                        <div class="jsp-showcase-string-skeleton"></div>
+                      </div>
+                      <div class="jsp-showcase-preferences-endings-fill"></div>
+                      <div class="jsp-padding-10px">
+                        <div class="jsp-showcase-seekbar-container">
+                          <div class="jsp-showcase-preferences-slider jsp-outline-green-1px"></div>
+                          <div class="jsp-showcase-preferences-slider jsp-pos-abs jsp-top-0 jsp-animated-green-gradient-box jsp-showcase-preferences-slider-fill-anim"></div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
+                <div class="jsp-showcase-seekbar-container">
+                  <div class="jsp-showcase-seekbar jsp-outline-green-1px jsp-white-bg"></div>
+                  <div class="jsp-showcase-seekbar jsp-pos-abs jsp-top-0 jsp-animated-green-gradient-box jsp-showcase-seekbar-anim"></div>
+                </div>
               </div>
-              <div class="jsp-showcase-seekbar-container">
-                <div class="jsp-showcase-seekbar jsp-outline-green-1px jsp-white-bg"></div>
-                <div class="jsp-showcase-seekbar jsp-pos-abs jsp-top-0 jsp-animated-green-gradient-box jsp-showcase-seekbar-anim"></div>
+            </div>
+            <div class="jsp-flex jsp-100-height jsp-flex-vertical-center jsp-flex-horizontal-center">
+              <div class="jsp-features-wrap">
+                <div class="jsp-features-scroller">
+                  <h class="jsp-feature-text">Skip automatically</h>
+                  <h class="jsp-feature-text">Persist fullscreen</h>
+                  <h class="jsp-feature-text">Change preferences</h>
+                  <h class="jsp-feature-text">Skip automatically</h>
+                </div>
               </div>
             </div>
           </div>
-          <div class="jsp-flex jsp-100-height jsp-flex-vertical-center jsp-flex-horizontal-center">
-            <div class="jsp-features-wrap">
-              <div class="jsp-features-scroller">
-                <h class="jsp-feature-text">Skip automatically</h>
-                <h class="jsp-feature-text">Persist fullscreen</h>
-                <h class="jsp-feature-text">Change preferences</h>
-                <h class="jsp-feature-text">Skip automatically</h>
+        </div>
+        <div class="jsp-tile-glow jsp-100-width">
+          <div class="jsp-tile jsp-100-height jsp-flex jsp-flex-direction-column jsp-border-box-sizing jsp-no-padding">
+            <div class="jsp-100-height jsp-padding-20px jsp-flex jsp-flex-direction-column jsp-no-bottom-padding">
+              <h class="jsp-heading">JutSuper</h>
+              <p class="jsp-paragraph">
+                A browser extension for continuous watching of
+                <a href="https://jut.su" target="_blank" class="jsp-hyperlink">jut.su</a>.
+              </p>
+              <p class="jsp-paragraph">
+                Skip openings and endings,
+                persist fullscreen,
+                set skipping order,
+                skipping delay and
+                maximum skips.
+              </p>
+            </div>
+            <div class="jsp-flex">
+              <div class="jsp-tile-button-section">
+                <div class="jsp-padding-15px">
+                  <div class="jsp-flex jsp-gap-3px jsp-flex-horizontal-center">
+                    <img class="jsp-no-interactions jsp-display-block" src="/assets/icon/download.svg">
+                    <h class="jsp-ruby">Chromium (WIP)</h>
+                  </div>
+                  <div class="jsp-flex jsp-gap-3px jsp-flex-horizontal-center">
+                    <img class="jsp-no-interactions jsp-display-block" src="/assets/3rd/chrome.svg" height="24px">
+                    <img class="jsp-no-interactions jsp-display-block" src="/assets/3rd/edge.svg" height="24px">
+                    <img class="jsp-no-interactions jsp-display-block" src="/assets/3rd/opera.svg" height="24px">
+                    <img class="jsp-no-interactions jsp-display-block" src="/assets/3rd/yandex.svg" height="24px">
+                  </div>
+                </div>
+              </div>
+              <hr class="jsp-hr">
+              <div class="jsp-tile-button-section">
+                <div class="jsp-padding-15px">
+                  <div class="jsp-flex jsp-gap-3px jsp-flex-horizontal-center">
+                    <img class="jsp-no-interactions jsp-display-block" src="/assets/icon/download.svg">
+                    <h class="jsp-ruby">Firefox (WIP)</h>
+                  </div>
+                  <div class="jsp-flex jsp-gap-3px jsp-flex-horizontal-center">
+                    <img class="jsp-no-interactions jsp-display-block" src="/assets/3rd/firefox.svg" height="24px">
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div class="jsp-tile-glow">
-        <div class="jsp-tile jsp-tile-margin">
-          <h class="jsp-heading">FAQ</h>
+        <div class="jsp-tile jsp-flex jsp-flex-direction-column jsp-no-padding">
+          <h class="jsp-heading jsp-padding-20px jsp-no-bottom-padding">FAQ</h>
+          
+          <div class="jsp-faq-bar">
+            <input
+              id="jsp-faq-bar-switch-1"
+              class="jsp-faq-bar-switch jsp-display-none"
+              type="checkbox"
+            />
+            <label
+              for="jsp-faq-bar-switch-1"
+              class="jsp-flex jsp-flex-direction-row jsp-gap-10px jsp-padding-20px jsp-no-top-padding jsp-no-bottom-padding"
+            >
+              <img
+                src="/assets/icon/dropdown.svg"
+                class="jsp-faq-dropdown jsp-flex jsp-no-interactions"
+              />
+              <h class="jsp-flex jsp-flex-vertical-center">
+                Where can I change the settings?
+              </h>
+            </label>
+          </div>
           <div>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci ea fugit aperiam deleniti magnam maiores, pariatur eveniet accusantium? Accusantium possimus, dolorum est adipisci repudiandae consectetur quaerat facere dolores sint incidunt?
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos aut maxime, labore expedita explicabo necessitatibus omnis nihil ad optio recusandae ea a facilis perferendis enim est, ratione aspernatur ipsa. Praesentium.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam reprehenderit minus quasi eum? Vitae corporis sit non quas laboriosam neque blanditiis natus quo perspiciatis quae, et, corrupti debitis optio nostrum.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint deleniti sit praesentium consequatur mollitia molestias aliquid aperiam eveniet nesciunt. Aliquid explicabo vel, voluptate minus obcaecati atque eveniet omnis non nobis?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eum porro, quas quibusdam assumenda aliquam nostrum, magni illo, nesciunt iure laborum vitae debitis officiis corporis aspernatur quis numquam pariatur. Error.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis culpa qui necessitatibus similique sequi dolores, mollitia praesentium. Sed porro eos, molestias hic voluptatibus in possimus dolores animi repudiandae eligendi nobis.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum molestiae quia laboriosam quasi neque dicta sunt dolorum fuga repudiandae repellendus? Dolore quam deleniti expedita facere quidem cumque in animi impedit.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus doloribus commodi, inventore velit autem quod sed optio, reprehenderit nisi consectetur dicta iusto delectus voluptatem eius, eos consequatur neque. Cum, aut?
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi beatae ad enim, laudantium cum voluptatibus ipsam iure itaque, harum adipisci facilis voluptatem, rem dolores! Eos obcaecati amet sequi quisquam quas?
+            <div>
+              <p class="jsp-padding-20px jsp-no-top-padding jsp-no-bottom-padding">
+                Directly in the player. Open up any episode and look for the extension logo.
+              </p>
+            </div>
+          </div>
+
+          <div class="jsp-faq-bar">
+            <input
+              id="jsp-faq-bar-switch-2"
+              class="jsp-faq-bar-switch jsp-display-none"
+              type="checkbox"
+            />
+            <label
+              for="jsp-faq-bar-switch-2"
+              class="jsp-flex jsp-flex-direction-row jsp-gap-10px jsp-padding-20px jsp-no-top-padding jsp-no-bottom-padding"
+            >
+              <img
+                src="/assets/icon/dropdown.svg"
+                class="jsp-faq-dropdown jsp-flex jsp-no-interactions"
+              />
+              <h class="jsp-flex jsp-flex-vertical-center">
+                Why it doesn't start playback automatically?
+              </h>
+            </label>
+          </div>
+          <div>
+            <div>
+              <p class="jsp-padding-20px jsp-no-top-padding jsp-no-bottom-padding">
+                You probably have this option disabled in the browser settings.
+              </p>
+            </div>
+          </div>
+
+          <div class="jsp-faq-bar">
+            <input
+              id="jsp-faq-bar-switch-3"
+              class="jsp-faq-bar-switch jsp-display-none"
+              type="checkbox"
+            />
+            <label
+              for="jsp-faq-bar-switch-3"
+              class="jsp-flex jsp-flex-direction-row jsp-gap-10px jsp-padding-20px jsp-no-top-padding jsp-no-bottom-padding"
+            >
+              <img
+                src="/assets/icon/dropdown.svg"
+                class="jsp-faq-dropdown jsp-flex jsp-no-interactions"
+              />
+              <h class="jsp-flex jsp-flex-vertical-center">
+                Are ads skipped?
+              </h>
+            </label>
+          </div>
+          <div>
+            <div>
+              <p class="jsp-padding-20px jsp-no-top-padding jsp-no-bottom-padding">
+                No, and there are no plans to implement it, because different ad providers use different layouts. Use ad-blocking extensions if that's a problem.
+              </p>
+            </div>
+          </div>
+
+          <div class="jsp-faq-bar">
+            <input
+              id="jsp-faq-bar-switch-4"
+              class="jsp-faq-bar-switch jsp-display-none"
+              type="checkbox"
+            />
+            <label
+              for="jsp-faq-bar-switch-4"
+              class="jsp-flex jsp-flex-direction-row jsp-gap-10px jsp-padding-20px jsp-no-top-padding jsp-no-bottom-padding"
+            >
+              <img
+                src="/assets/icon/dropdown.svg"
+                class="jsp-faq-dropdown jsp-flex jsp-no-interactions"
+              />
+              <h class="jsp-flex jsp-flex-vertical-center">
+                Does it work for other websites?
+              </h>
+            </label>
+          </div>
+          <div>
+            <div>
+              <p class="jsp-padding-20px jsp-no-top-padding jsp-no-bottom-padding">
+                No. Even though it would be interesting, there are no plans to implement support for other websites. You can try forking and experimenting.
+              </p>
+            </div>
           </div>
         </div>
       </div>
