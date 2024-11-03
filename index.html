@@ -10,15 +10,20 @@
   <div class="jsp-flex jsp-flex-horizontal-center">
     <div class="jsp-flex jsp-flex-horizontal-center jsp-flex-direction-column jsp-900px-width jsp-gap-10px">
       <div class="jsp-tile-glow">
-        <div id="jsp-header" class="jsp-tile jsp-no-padding">
-          <div id="jsp-emblem" class="jsp-animated-green-gradient-box jsp-header-height jsp-flex jsp-flex-vertical-center jsp-padding-15px jsp-l-padding-30px jsp-r-padding-30px">
+        <div id="jsp-header" class="jsp-tile jsp-no-padding jsp-flex jsp-flex-direction-row jsp-header-height">
+          <div id="jsp-emblem" class="jsp-animated-green-gradient-box jsp-padding-12px jsp-l-padding-20px jsp-r-padding-20px jsp-border-radius-20px">
             <div class="jsp-showcase-container">
-              <img class="jsp-no-interactions" src="/assets/logo/square-white-128.svg">
+              <img class="jsp-no-interactions" class="jsp-100-height" src="/assets/logo/square-white-128.svg">
               <div class="jsp-description-container">
                 <h class="jsp-showcase-extension-name">JutSuper</h>
                 <h class="jsp-showcase-description">for jut.su</h>
               </div>
             </div>
+          </div>
+          <div class="jsp-header-links">
+            <a href="https://github.com/jutsuper/jutsuper" target="_blank">
+              <img class="jsp-100-height" src="/assets/3rd/github-128.svg">
+            </a>
           </div>
         </div>
       </div>
@@ -80,27 +85,20 @@
           </div>
         </div>
         <div class="jsp-tile-glow jsp-100-width">
-          <div class="jsp-tile jsp-100-height jsp-flex jsp-flex-direction-column jsp-border-box-sizing jsp-no-padding">
-            <div class="jsp-100-height jsp-padding-20px jsp-flex jsp-flex-direction-column jsp-no-bottom-padding">
+          <div class="jsp-tile jsp-100-height jsp-flex jsp-flex-direction-column jsp-border-box-sizing">
+            <div class="jsp-100-height jsp-flex jsp-flex-direction-column jsp-padding-bottom-20px">
               <h class="jsp-heading">JutSuper</h>
               <p class="jsp-paragraph">
                 A browser extension for continuous watching of
                 <a href="https://jut.su" target="_blank" class="jsp-hyperlink">jut.su</a>.
               </p>
-              <p class="jsp-paragraph">
-                Skip openings and endings,
-                persist fullscreen,
-                set skipping order,
-                skipping delay and
-                maximum skips.
-              </p>
             </div>
-            <div class="jsp-flex">
+            <div class="jsp-flex jsp-gap-10px">
               <div class="jsp-tile-button-section">
                 <div class="jsp-padding-15px">
                   <div class="jsp-flex jsp-gap-3px jsp-flex-horizontal-center">
                     <img class="jsp-no-interactions jsp-display-block" src="/assets/icon/download.svg">
-                    <h class="jsp-ruby">Chromium (WIP)</h>
+                    <h class="jsp-ruby">Chromium</h>
                   </div>
                   <div class="jsp-flex jsp-gap-3px jsp-flex-horizontal-center">
                     <img class="jsp-no-interactions jsp-display-block" src="/assets/3rd/chrome.svg" height="24px">
@@ -110,12 +108,11 @@
                   </div>
                 </div>
               </div>
-              <hr class="jsp-hr">
               <div class="jsp-tile-button-section">
                 <div class="jsp-padding-15px">
                   <div class="jsp-flex jsp-gap-3px jsp-flex-horizontal-center">
                     <img class="jsp-no-interactions jsp-display-block" src="/assets/icon/download.svg">
-                    <h class="jsp-ruby">Firefox (WIP)</h>
+                    <h class="jsp-ruby">Firefox</h>
                   </div>
                   <div class="jsp-flex jsp-gap-3px jsp-flex-horizontal-center">
                     <img class="jsp-no-interactions jsp-display-block" src="/assets/3rd/firefox.svg" height="24px">
@@ -172,7 +169,7 @@
                 class="jsp-faq-dropdown jsp-flex jsp-no-interactions"
               />
               <h class="jsp-flex jsp-flex-vertical-center">
-                Why it doesn't start playback automatically?
+                Why the playback doesn't start automatically?
               </h>
             </label>
           </div>
@@ -206,7 +203,7 @@
           <div>
             <div>
               <p class="jsp-padding-20px jsp-no-top-padding jsp-no-bottom-padding">
-                No, and there are no plans to implement it, because different ad providers use different layouts. Use ad-blocking extensions if that's a problem.
+                No, and there are no plans to implement it because different ad providers use different layouts. If that's a problem, use ad-blocking extensions.
               </p>
             </div>
           </div>
@@ -226,14 +223,14 @@
                 class="jsp-faq-dropdown jsp-flex jsp-no-interactions"
               />
               <h class="jsp-flex jsp-flex-vertical-center">
-                Does it work for other websites?
+                Does it work on other websites?
               </h>
             </label>
           </div>
           <div>
             <div>
               <p class="jsp-padding-20px jsp-no-top-padding jsp-no-bottom-padding">
-                No. Even though it would be interesting, there are no plans to implement support for other websites. You can try forking and experimenting.
+                No. Even though it would be interesting to have broader coverage, there are no plans for it. You can try forking and experimenting.
               </p>
             </div>
           </div>
