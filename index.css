@@ -139,6 +139,10 @@
   #jsp-showcase-download-tiles {
     flex-direction: column;
   }
+
+  #jsp-showcase {
+    height: 200px;
+  }
 }
 
 .jsp-no-margins.jsp-no-margins {
