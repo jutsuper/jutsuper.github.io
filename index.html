@@ -6,294 +6,238 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=10.0, user-scalable=1"/>
   <title>JutSuper</title>
 </head>
-<body class="jsp-body-overflows jsp-font-roboto">
-  <div class="jsp-flex jsp-flex-horizontal-center">
-    <div class="jsp-flex jsp-flex-horizontal-center jsp-flex-direction-column jsp-900px-width jsp-gap-10px">
-      <div class="jsp-tile-glow">
-        <div id="jsp-header" class="jsp-tile jsp-no-padding jsp-flex jsp-flex-direction-row jsp-header-height">
-          <div id="jsp-emblem" class="jsp-animated-green-gradient-box jsp-padding-12px jsp-l-padding-20px jsp-r-padding-20px jsp-border-radius-20px">
-            <div class="jsp-showcase-container">
-              <img class="jsp-no-interactions" class="jsp-100-height" src="/assets/logo/square-white-128.svg">
-              <div class="jsp-description-container">
-                <h class="jsp-showcase-extension-name">JutSuper</h>
-                <h class="jsp-showcase-description">for jut.su</h>
+<body class="jsp-body-hide-overflows jsp-no-margins jsp-no-padding jsp-font-roboto">
+  <div class="jsp-loading-overlay"></div>
+  <div class="jsp-padding-10px">
+    <div class="jsp-flex jsp-flex-horizontal-center">
+      <div class="jsp-flex jsp-flex-horizontal-center jsp-flex-direction-column jsp-900px-width jsp-gap-10px">
+        <div class="jsp-tile-glow">
+          <div id="jsp-header" class="jsp-tile jsp-no-padding jsp-flex jsp-flex-direction-row jsp-header-height">
+            <div id="jsp-emblem" class="jsp-animated-green-gradient-box jsp-padding-12px jsp-l-padding-20px jsp-r-padding-20px jsp-border-radius-20px">
+              <div class="jsp-showcase-container">
+                <img class="jsp-no-interactions" class="jsp-100-height" src="/assets/logo/square-white-128.svg">
+                <div class="jsp-description-container">
+                  <h class="jsp-showcase-extension-name">JutSuper</h>
+                  <h class="jsp-showcase-description jsp-text-for-jutsu">for jut.su</h>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="jsp-header-links">
-            <a href="https://github.com/jutsuper/jutsuper" target="_blank">
-              <img class="jsp-100-height" src="/assets/3rd/github-128.svg">
-            </a>
+            <div class="jsp-header-links">
+              <a href="https://github.com/jutsuper/jutsuper" target="_blank">
+                <img class="jsp-100-height" src="/assets/3rd/github-128.svg">
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-      <div id="jsp-showcase-download-tiles" class="jsp-flex jsp-flex-direction-row jsp-gap-10px">
-        <div class="jsp-tile-glow jsp-100-width">
-          <div id="jsp-showcase" class="jsp-tile jsp-no-padding jsp-100-height jsp-pos-rel">
-            <div class="jsp-flex jsp-100-height jsp-100-width jsp-flex-vertical-center jsp-flex-horizontal-center jsp-pos-abs" style="z-index: 2">
-              <div class="jsp-features-wrap jsp-no-interactions">
-                <div class="jsp-features-scroller">
-                  <h class="jsp-feature-text">Skip automatically</h>
-                  <h class="jsp-feature-text">Persist fullscreen</h>
-                  <h class="jsp-feature-text">Change preferences</h>
-                  <h class="jsp-feature-text">Skip automatically</h>
-                </div>
-              </div>
-            </div>
-            <div class="jsp-flex jsp-flex-vertical-center jsp-flex-horizontal-center jsp-100-width jsp-100-height jsp-pos-abs">
-              <div class="jsp-showcase-white-screen jsp-pos-rel" style="box-sizing: border-box; z-index: 1">
-                <div class="jsp-flex jsp-flex-direction-column jsp-animated-green-gradient-box jsp-rounded jsp-padding-20px jsp-100-width jsp-100-height" style="box-sizing: border-box; overflow: hidden">
-                  <div class="jsp-100-width jsp-100-height jsp-margin-bottom-16px jsp-overflow-hidden jsp-pos-rel">
-                    <div class="jsp-showcase-skipping-notif-container jsp-showcase-skipping-notif-appear-anim">
-                      <div class="jsp-showcase-skipping-notif-content">
-                        <div class="jsp-flex jsp-flex-direction-row">
-                          <img src="/assets/icon/skip-white.svg" style="margin-right: 4px;">
-                          <div class="jsp-showcase-string-skeleton"></div>
-                        </div>
-                      </div>
-                      <div class="jsp-showcase-skipping-notif-line jsp-showcase-skipping-notif-line-anim"></div>
-                    </div>
-                    <div class="jsp-showcase-preferences-container jsp-showcase-preferences-anim">
-                      <div class="jsp-showcase-preferences">
-                        <div class="jsp-flex jsp-flex-direction-row jsp-flex-vertical-center jsp-padding-10px jsp-padding-bottom-5px">
-                          <div class="jsp-showcase-preferences-switch-white jsp-showcase-openings-switch-anim jsp-margin-right-10px">
-                            <div class="jsp-showcase-preferences-switch-white-thumb jsp-showcase-openings-switch-thumb-anim"></div>
-                          </div>
-                          <div class="jsp-showcase-string-skeleton"></div>
-                        </div>
-                        <div class="jsp-flex jsp-flex-direction-row jsp-flex-vertical-center jsp-padding-10px jsp-padding-top-5px jsp-white-bg">
-                          <div class="jsp-showcase-preferences-switch-green jsp-margin-right-10px">
-                            <div class="jsp-showcase-preferences-switch-green-thumb"></div>
-                          </div>
-                          <div class="jsp-showcase-string-skeleton-light-green"></div>
-                        </div>
-                        <div class="jsp-showcase-preferences-endings-fill"></div>
-                        <div class="jsp-padding-10px">
-                          <div class="jsp-showcase-seekbar-container">
-                            <div class="jsp-showcase-preferences-slider jsp-outline-white-1px"></div>
-                            <div class="jsp-showcase-preferences-slider jsp-pos-abs jsp-top-0 jsp-white-bg jsp-showcase-preferences-slider-fill-anim"></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="jsp-showcase-seekbar-container">
-                    <div class="jsp-showcase-seekbar jsp-outline-white-1px"></div>
-                    <div class="jsp-showcase-seekbar jsp-pos-abs jsp-top-0 jsp-white-bg jsp-showcase-seekbar-anim"></div>
+        <div id="jsp-showcase-download-tiles" class="jsp-flex jsp-flex-direction-row jsp-gap-10px">
+          <div class="jsp-tile-glow jsp-100-width">
+            <div id="jsp-showcase" class="jsp-tile jsp-no-padding jsp-100-height jsp-pos-rel">
+              <div class="jsp-flex jsp-100-height jsp-100-width jsp-flex-vertical-center jsp-flex-horizontal-center jsp-pos-abs" style="z-index: 2">
+                <div class="jsp-features-wrap jsp-no-interactions">
+                  <div class="jsp-features-scroller">
+                    <h class="jsp-feature-text jsp-text-skip-automatically">Skip automatically</h>
+                    <h class="jsp-feature-text jsp-text-persist-fullscreen">Persist fullscreen</h>
+                    <h class="jsp-feature-text jsp-text-change-preferences">Change preferences</h>
+                    <h class="jsp-feature-text jsp-text-skip-automatically">Skip automatically</h>
                   </div>
                 </div>
               </div>
-              <div class="jsp-no-padding jsp-100-height jsp-100-width jsp-stripes jsp-pos-abs" style="z-index: 0"></div>
-            </div>
-          </div>
-          <!--
-          <div id="jsp-showcase" class="jsp-tile jsp-no-padding jsp-100-height jsp-stripes jsp-no-interactions">
-            <div style="position: relative; z-index: -2;" class="jsp-100-width jsp-100-height jsp-animated-green-gradient-box"></div>
-            <div class="jsp-flex jsp-flex-vertical-center jsp-flex-horizontal-center jsp-pos-abs jsp-100-width jsp-100-height">
-              <div class="jsp-flex jsp-flex-vertical-bottom jsp-flex-direction-column jsp-showcase-white-screen jsp-pos-rel jsp-no-padding">
-                <div style="box-sizing: border-box; overflow: hidden; border-radius: 20px;" class="jsp-padding-20px jsp-100-height jsp-100-width jsp-animated-green-gradient-box">
-                  <div class="jsp-100-width jsp-100-height jsp-margin-bottom-16px jsp-overflow-hidden jsp-pos-rel">
-                    <div class="jsp-showcase-skipping-notif-container jsp-showcase-skipping-notif-appear-anim">
-                      <div class="jsp-showcase-skipping-notif-content">
-                        <div class="jsp-flex jsp-flex-direction-row">
-                          <img src="/assets/icon/skip-white.svg" style="margin-right: 4px;">
-                          <div class="jsp-showcase-string-skeleton"></div>
+              <div class="jsp-flex jsp-flex-vertical-center jsp-flex-horizontal-center jsp-100-width jsp-100-height jsp-pos-abs">
+                <div class="jsp-showcase-white-screen jsp-pos-rel" style="box-sizing: border-box; z-index: 1">
+                  <div class="jsp-flex jsp-flex-direction-column jsp-animated-green-gradient-box jsp-rounded jsp-padding-20px jsp-100-width jsp-100-height" style="box-sizing: border-box; overflow: hidden">
+                    <div class="jsp-100-width jsp-100-height jsp-margin-bottom-16px jsp-overflow-hidden jsp-pos-rel">
+                      <div class="jsp-showcase-skipping-notif-container jsp-showcase-skipping-notif-appear-anim">
+                        <div class="jsp-showcase-skipping-notif-content">
+                          <div class="jsp-flex jsp-flex-direction-row">
+                            <img src="/assets/icon/skip-white.svg" style="margin-right: 4px;">
+                            <div class="jsp-showcase-string-skeleton"></div>
+                          </div>
                         </div>
+                        <div class="jsp-showcase-skipping-notif-line jsp-showcase-skipping-notif-line-anim"></div>
                       </div>
-                      <div class="jsp-showcase-skipping-notif-line jsp-showcase-skipping-notif-line-anim"></div>
-                    </div>
-                    <div class="jsp-showcase-preferences-container jsp-showcase-preferences-anim">
-                      <div class="jsp-showcase-preferences">
-                        <div class="jsp-flex jsp-flex-direction-row jsp-flex-vertical-center jsp-padding-10px jsp-padding-bottom-5px">
-                          <div class="jsp-showcase-preferences-switch-white jsp-showcase-openings-switch-anim jsp-margin-right-10px">
-                            <div class="jsp-showcase-preferences-switch-white-thumb jsp-showcase-openings-switch-thumb-anim"></div>
+                      <div class="jsp-showcase-preferences-container jsp-showcase-preferences-anim">
+                        <div class="jsp-showcase-preferences">
+                          <div class="jsp-flex jsp-flex-direction-row jsp-flex-vertical-center jsp-padding-10px jsp-padding-bottom-5px">
+                            <div class="jsp-showcase-preferences-switch-white jsp-showcase-openings-switch-anim jsp-margin-right-10px">
+                              <div class="jsp-showcase-preferences-switch-white-thumb jsp-showcase-openings-switch-thumb-anim"></div>
+                            </div>
+                            <div class="jsp-showcase-string-skeleton"></div>
                           </div>
-                          <div class="jsp-showcase-string-skeleton"></div>
-                        </div>
-                        <div class="jsp-flex jsp-flex-direction-row jsp-flex-vertical-center jsp-padding-10px jsp-padding-top-5px jsp-white-bg">
-                          <div class="jsp-showcase-preferences-switch-white jsp-margin-right-10px">
-                            <div class="jsp-showcase-preferences-switch-white-thumb jsp-showcase-endings-switch-thumb-anim"></div>
+                          <div class="jsp-flex jsp-flex-direction-row jsp-flex-vertical-center jsp-padding-10px jsp-padding-top-5px jsp-white-bg">
+                            <div class="jsp-showcase-preferences-switch-green jsp-margin-right-10px">
+                              <div class="jsp-showcase-preferences-switch-green-thumb"></div>
+                            </div>
+                            <div class="jsp-showcase-string-skeleton-light-green"></div>
                           </div>
-                          <div class="jsp-showcase-string-skeleton-light-green"></div>
-                        </div>
-                        <div class="jsp-showcase-preferences-endings-fill"></div>
-                        <div class="jsp-padding-10px">
-                          <div class="jsp-showcase-seekbar-container">
-                            <div class="jsp-showcase-preferences-slider jsp-outline-white-1px"></div>
-                            <div class="jsp-showcase-preferences-slider jsp-pos-abs jsp-top-0 jsp-white-bg jsp-showcase-preferences-slider-fill-anim"></div>
+                          <div class="jsp-showcase-preferences-endings-fill"></div>
+                          <div class="jsp-padding-10px">
+                            <div class="jsp-showcase-seekbar-container">
+                              <div class="jsp-showcase-preferences-slider jsp-outline-white-1px"></div>
+                              <div class="jsp-showcase-preferences-slider jsp-pos-abs jsp-top-0 jsp-white-bg jsp-showcase-preferences-slider-fill-anim"></div>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="jsp-showcase-seekbar-container">
-                    <div class="jsp-showcase-seekbar jsp-outline-white-1px"></div>
-                    <div class="jsp-showcase-seekbar jsp-pos-abs jsp-top-0 jsp-white-bg jsp-showcase-seekbar-anim"></div>
+                    <div class="jsp-showcase-seekbar-container">
+                      <div class="jsp-showcase-seekbar jsp-outline-white-1px"></div>
+                      <div class="jsp-showcase-seekbar jsp-pos-abs jsp-top-0 jsp-white-bg jsp-showcase-seekbar-anim"></div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="jsp-flex jsp-100-height jsp-flex-vertical-center jsp-flex-horizontal-center">
-              <div class="jsp-features-wrap">
-                <div class="jsp-features-scroller">
-                  <h class="jsp-feature-text">Skip automatically</h>
-                  <h class="jsp-feature-text">Persist fullscreen</h>
-                  <h class="jsp-feature-text">Change preferences</h>
-                  <h class="jsp-feature-text">Skip automatically</h>
-                </div>
+                <div class="jsp-no-padding jsp-100-height jsp-100-width jsp-stripes jsp-pos-abs" style="z-index: 0"></div>
               </div>
             </div>
           </div>
-          -->
-        </div>
-        <div class="jsp-tile-glow jsp-100-width">
-          <div class="jsp-tile jsp-100-height jsp-flex jsp-flex-direction-column jsp-border-box-sizing">
-            <div class="jsp-100-height jsp-flex jsp-flex-direction-column jsp-padding-bottom-20px">
-              <h class="jsp-heading">JutSuper</h>
-              <p class="jsp-paragraph">
-                A browser extension for continuous watching of
-                <a href="https://jut.su" target="_blank" class="jsp-hyperlink">jut.su</a>.
-              </p>
-            </div>
-            <div class="jsp-flex jsp-gap-10px">
-              <div class="jsp-tile-button-section">
-                <div class="jsp-padding-15px">
-                  <div class="jsp-flex jsp-gap-3px jsp-flex-horizontal-center">
-                    <img class="jsp-no-interactions jsp-display-block" src="/assets/icon/download.svg">
-                    <h class="jsp-ruby">Chromium</h>
-                  </div>
-                  <div class="jsp-flex jsp-gap-3px jsp-flex-horizontal-center">
-                    <img class="jsp-no-interactions jsp-display-block" src="/assets/3rd/chrome.svg" height="24px">
-                    <img class="jsp-no-interactions jsp-display-block" src="/assets/3rd/edge.svg" height="24px">
-                    <img class="jsp-no-interactions jsp-display-block" src="/assets/3rd/opera.svg" height="24px">
-                    <img class="jsp-no-interactions jsp-display-block" src="/assets/3rd/yandex.svg" height="24px">
+          <div class="jsp-tile-glow jsp-100-width">
+            <div class="jsp-tile jsp-100-height jsp-flex jsp-flex-direction-column jsp-border-box-sizing">
+              <div class="jsp-100-height jsp-flex jsp-flex-direction-column jsp-padding-bottom-20px">
+                <h class="jsp-heading">JutSuper</h>
+                <p class="jsp-paragraph">
+                  <a class="jsp-text-ext-description">A browser extension for continuous watching of</a>
+                  <a href="https://jut.su" target="_blank" class="jsp-hyperlink">jut.su</a>.
+                </p>
+              </div>
+              <div class="jsp-flex jsp-gap-10px">
+                <div class="jsp-tile-button-section">
+                  <div class="jsp-padding-15px">
+                    <div class="jsp-flex jsp-gap-3px jsp-flex-horizontal-center">
+                      <img class="jsp-no-interactions jsp-display-block" src="/assets/icon/download.svg">
+                      <h class="jsp-ruby">Chromium</h>
+                    </div>
+                    <div class="jsp-flex jsp-gap-3px jsp-flex-horizontal-center">
+                      <img class="jsp-no-interactions jsp-display-block" src="/assets/3rd/chrome.svg" height="24px">
+                      <img class="jsp-no-interactions jsp-display-block" src="/assets/3rd/edge.svg" height="24px">
+                      <img class="jsp-no-interactions jsp-display-block" src="/assets/3rd/opera.svg" height="24px">
+                      <img class="jsp-no-interactions jsp-display-block" src="/assets/3rd/yandex.svg" height="24px">
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="jsp-tile-button-section">
-                <div class="jsp-padding-15px">
-                  <div class="jsp-flex jsp-gap-3px jsp-flex-horizontal-center">
-                    <img class="jsp-no-interactions jsp-display-block" src="/assets/icon/download.svg">
-                    <h class="jsp-ruby">Firefox</h>
-                  </div>
-                  <div class="jsp-flex jsp-gap-3px jsp-flex-horizontal-center">
-                    <img class="jsp-no-interactions jsp-display-block" src="/assets/3rd/firefox.svg" height="24px">
+                <div class="jsp-tile-button-section">
+                  <div class="jsp-padding-15px">
+                    <div class="jsp-flex jsp-gap-3px jsp-flex-horizontal-center">
+                      <img class="jsp-no-interactions jsp-display-block" src="/assets/icon/download.svg">
+                      <h class="jsp-ruby">Firefox</h>
+                    </div>
+                    <div class="jsp-flex jsp-gap-3px jsp-flex-horizontal-center">
+                      <img class="jsp-no-interactions jsp-display-block" src="/assets/3rd/firefox.svg" height="24px">
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="jsp-tile-glow">
-        <div class="jsp-tile jsp-flex jsp-flex-direction-column jsp-no-padding">
-          <h class="jsp-heading jsp-padding-20px jsp-no-bottom-padding">FAQ</h>
-          
-          <div class="jsp-faq-bar">
-            <input
-              id="jsp-faq-bar-switch-1"
-              class="jsp-faq-bar-switch jsp-display-none"
-              type="checkbox"
-            />
-            <label
-              for="jsp-faq-bar-switch-1"
-              class="jsp-flex jsp-flex-direction-row jsp-gap-10px jsp-padding-20px jsp-no-top-padding jsp-no-bottom-padding"
-            >
-              <img
-                src="/assets/icon/dropdown.svg"
-                class="jsp-faq-dropdown jsp-flex jsp-no-interactions"
+        <div class="jsp-tile-glow">
+          <div class="jsp-tile jsp-flex jsp-flex-direction-column jsp-no-padding">
+            <h class="jsp-heading jsp-padding-20px jsp-no-bottom-padding">FAQ</h>
+            
+            <div class="jsp-faq-bar">
+              <input
+                id="jsp-faq-bar-switch-1"
+                class="jsp-faq-bar-switch jsp-display-none"
+                type="checkbox"
               />
-              <h class="jsp-flex jsp-flex-vertical-center">
-                Where can I change the settings?
-              </h>
-            </label>
-          </div>
-          <div>
-            <div>
-              <p class="jsp-padding-20px jsp-no-top-padding jsp-no-bottom-padding">
-                Directly in the player. Open up any episode and look for the extension logo.
-              </p>
+              <label
+                for="jsp-faq-bar-switch-1"
+                class="jsp-flex jsp-flex-direction-row jsp-gap-10px jsp-padding-20px jsp-no-top-padding jsp-no-bottom-padding"
+              >
+                <img
+                  src="/assets/icon/dropdown.svg"
+                  class="jsp-faq-dropdown jsp-flex jsp-no-interactions"
+                />
+                <h class="jsp-flex jsp-flex-vertical-center jsp-text-where-settings-q">
+                  Where can I change the settings?
+                </h>
+              </label>
             </div>
-          </div>
-
-          <div class="jsp-faq-bar">
-            <input
-              id="jsp-faq-bar-switch-2"
-              class="jsp-faq-bar-switch jsp-display-none"
-              type="checkbox"
-            />
-            <label
-              for="jsp-faq-bar-switch-2"
-              class="jsp-flex jsp-flex-direction-row jsp-gap-10px jsp-padding-20px jsp-no-top-padding jsp-no-bottom-padding"
-            >
-              <img
-                src="/assets/icon/dropdown.svg"
-                class="jsp-faq-dropdown jsp-flex jsp-no-interactions"
-              />
-              <h class="jsp-flex jsp-flex-vertical-center">
-                Why the playback doesn't start automatically?
-              </h>
-            </label>
-          </div>
-          <div>
             <div>
-              <p class="jsp-padding-20px jsp-no-top-padding jsp-no-bottom-padding">
-                You probably have this option disabled in the browser settings.
-              </p>
+              <div>
+                <p class="jsp-padding-20px jsp-no-top-padding jsp-no-bottom-padding jsp-text-where-settings-a">
+                  Directly in the player. Open up any episode and look for the extension logo.
+                </p>
+              </div>
             </div>
-          </div>
-
-          <div class="jsp-faq-bar">
-            <input
-              id="jsp-faq-bar-switch-3"
-              class="jsp-faq-bar-switch jsp-display-none"
-              type="checkbox"
-            />
-            <label
-              for="jsp-faq-bar-switch-3"
-              class="jsp-flex jsp-flex-direction-row jsp-gap-10px jsp-padding-20px jsp-no-top-padding jsp-no-bottom-padding"
-            >
-              <img
-                src="/assets/icon/dropdown.svg"
-                class="jsp-faq-dropdown jsp-flex jsp-no-interactions"
+  
+            <div class="jsp-faq-bar">
+              <input
+                id="jsp-faq-bar-switch-2"
+                class="jsp-faq-bar-switch jsp-display-none"
+                type="checkbox"
               />
-              <h class="jsp-flex jsp-flex-vertical-center">
-                Are ads skipped?
-              </h>
-            </label>
-          </div>
-          <div>
-            <div>
-              <p class="jsp-padding-20px jsp-no-top-padding jsp-no-bottom-padding">
-                No, and there are no plans to implement it because different ad providers use different layouts. If that's a problem, use ad-blocking extensions.
-              </p>
+              <label
+                for="jsp-faq-bar-switch-2"
+                class="jsp-flex jsp-flex-direction-row jsp-gap-10px jsp-padding-20px jsp-no-top-padding jsp-no-bottom-padding"
+              >
+                <img
+                  src="/assets/icon/dropdown.svg"
+                  class="jsp-faq-dropdown jsp-flex jsp-no-interactions"
+                />
+                <h class="jsp-flex jsp-flex-vertical-center jsp-text-no-autoplayback-q">
+                  Why the playback doesn't start automatically?
+                </h>
+              </label>
             </div>
-          </div>
-
-          <div class="jsp-faq-bar">
-            <input
-              id="jsp-faq-bar-switch-4"
-              class="jsp-faq-bar-switch jsp-display-none"
-              type="checkbox"
-            />
-            <label
-              for="jsp-faq-bar-switch-4"
-              class="jsp-flex jsp-flex-direction-row jsp-gap-10px jsp-padding-20px jsp-no-top-padding jsp-no-bottom-padding"
-            >
-              <img
-                src="/assets/icon/dropdown.svg"
-                class="jsp-faq-dropdown jsp-flex jsp-no-interactions"
-              />
-              <h class="jsp-flex jsp-flex-vertical-center">
-                Does it work on other websites?
-              </h>
-            </label>
-          </div>
-          <div>
             <div>
-              <p class="jsp-padding-20px jsp-no-top-padding jsp-no-bottom-padding">
-                No. Even though it would be interesting to have broader coverage, there are no plans for it. You can try forking and experimenting.
-              </p>
+              <div>
+                <p class="jsp-padding-20px jsp-no-top-padding jsp-no-bottom-padding jsp-text-no-autoplayback-a">
+                  You probably have this option disabled in the browser settings.
+                </p>
+              </div>
+            </div>
+  
+            <div class="jsp-faq-bar">
+              <input
+                id="jsp-faq-bar-switch-3"
+                class="jsp-faq-bar-switch jsp-display-none"
+                type="checkbox"
+              />
+              <label
+                for="jsp-faq-bar-switch-3"
+                class="jsp-flex jsp-flex-direction-row jsp-gap-10px jsp-padding-20px jsp-no-top-padding jsp-no-bottom-padding"
+              >
+                <img
+                  src="/assets/icon/dropdown.svg"
+                  class="jsp-faq-dropdown jsp-flex jsp-no-interactions"
+                />
+                <h class="jsp-flex jsp-flex-vertical-center jsp-text-skipping-ads-q">
+                  Are ads skipped?
+                </h>
+              </label>
+            </div>
+            <div>
+              <div>
+                <p class="jsp-padding-20px jsp-no-top-padding jsp-no-bottom-padding jsp-text-skipping-ads-a">
+                  No, and there are no plans to implement it because different ad providers use different layouts. If that's a problem, use ad-blocking extensions.
+                </p>
+              </div>
+            </div>
+  
+            <div class="jsp-faq-bar">
+              <input
+                id="jsp-faq-bar-switch-4"
+                class="jsp-faq-bar-switch jsp-display-none"
+                type="checkbox"
+              />
+              <label
+                for="jsp-faq-bar-switch-4"
+                class="jsp-flex jsp-flex-direction-row jsp-gap-10px jsp-padding-20px jsp-no-top-padding jsp-no-bottom-padding"
+              >
+                <img
+                  src="/assets/icon/dropdown.svg"
+                  class="jsp-faq-dropdown jsp-flex jsp-no-interactions"
+                />
+                <h class="jsp-flex jsp-flex-vertical-center jsp-text-other-websites-q">
+                  Does it work on other websites?
+                </h>
+              </label>
+            </div>
+            <div>
+              <div>
+                <p class="jsp-padding-20px jsp-no-top-padding jsp-no-bottom-padding jsp-text-other-websites-a">
+                  No. Even though it would be interesting to have broader coverage, there are no plans for it. You can try forking and experimenting.
+                </p>
+              </div>
             </div>
           </div>
         </div>

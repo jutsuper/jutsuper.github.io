@@ -8,6 +8,7 @@
   --jsp-color-darker-green: #8CB660;
   --jsp-color-darker-green-half-transparent: #8CB66080;
   --jsp-dur-slow: .50s;
+  --jsp-dur-mid: .25s;
   --jsp-curve-fast-start-slow-end: cubic-bezier(0,.86,.24,.96);
   --jsp-curve-smoother-fast-start-slow-end: cubic-bezier(.11,.88,.42,.97);
 }
@@ -155,6 +156,11 @@
   padding: 0;
 }
 
+.jsp-body-hide-overflows {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
 .jsp-body-overflows {
   overflow-x: auto;
   overflow-y: scroll;
@@ -170,6 +176,10 @@
 
 .jsp-display-none {
   display: none;
+}
+
+.jsp-opacity-0 {
+  opacity: 0%;
 }
 
 .jsp-no-interactions {
@@ -330,6 +340,18 @@
 
 .jsp-border-box-sizing {
   box-sizing: border-box;
+}
+
+.jsp-loading-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  position: fixed;
+  z-index: 50;
+  transition: all var(--jsp-dur-mid) linear;
 }
 
 .jsp-heading {
