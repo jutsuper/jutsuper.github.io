@@ -124,18 +124,11 @@
 @keyframes jsp-anim-showcase-preferences-openings-switch-thumb {
   0%, 66% {
     transform: translateX(0);
-    background-color: white;
+    background-color: transparent;
   }
   72%, 100% {
     transform: translateX(24px);
-    background-color: var(--jsp-color-light-green);
-  }
-}
-
-@keyframes jsp-anim-showcase-preferences-endings-switch-thumb {
-  0%, 100% {
-    transform: translateX(24px);
-    background-color: var(--jsp-color-light-green);
+    background-color: white;
   }
 }
 
@@ -150,7 +143,7 @@
   }
 
   #jsp-showcase {
-    height: 220px;
+    height: 200px;
   }
 }
 
@@ -534,13 +527,13 @@
   overflow: hidden;
   height: 1.8em;
   border-radius: 50px;
+  background-color: white;
 }
 
 .jsp-features-scroller {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: white;
   padding-left: 10px;
   padding-right: 10px;
   animation-name: jsp-anim-features-scroll;
@@ -589,6 +582,10 @@
   box-shadow: inset var(--jsp-color-light-green) 0px 0px 0px 1px;
 }
 
+.jsp-outline-white-1px {
+  box-shadow: inset white 0px 0px 0px 1px;
+}
+
 .jsp-white-bg {
   background-color: white;
 }
@@ -598,8 +595,8 @@
     -60deg,
     var(--jsp-color-light-green),
     var(--jsp-color-light-green) 1px,
-    white 1px,
-    white 20px
+    transparent 1px,
+    transparent 20px
   );
   background-size: 200% 200%;
   animation-name: jsp-anim-stripes;
@@ -612,7 +609,7 @@
 .jsp-showcase-skipping-notif-container {
   width: fit-content;
   border-radius: 12px;
-  box-shadow: inset var(--jsp-color-light-green) 0px 0px 0px 1px;
+  box-shadow: inset white 0px 0px 0px 1px;
   overflow: hidden;
 }
 
@@ -631,7 +628,7 @@
 .jsp-showcase-skipping-notif-line {
   width: 100%;
   height: 6px;
-  background-color: var(--jsp-color-light-green);
+  background-color: white;
 }
 
 .jsp-showcase-skipping-notif-line-anim {
@@ -650,7 +647,7 @@
   right: 0;
   overflow: hidden;
   border-radius: 12px;
-  box-shadow: inset var(--jsp-color-light-green) 0px 0px 0px 1px;
+  box-shadow: inset white 0px 0px 0px 1px;
 }
 
 .jsp-showcase-preferences {
@@ -666,16 +663,34 @@
   animation-iteration-count: infinite;
 }
 
-.jsp-showcase-preferences-switch {
+.jsp-showcase-preferences-switch-white {
   position: relative;
   width: 44px;
   height: 20px;
   border-radius: 50px;
-  background-color: white;
+  box-shadow: white 0px 0px 0px 1px;
+}
+
+.jsp-showcase-preferences-switch-white-thumb {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  border-radius: 50px;
+  box-shadow: white 0px 0px 0px 1px;
+}
+
+.jsp-showcase-preferences-switch-green {
+  position: relative;
+  width: 44px;
+  height: 20px;
+  border-radius: 50px;
   box-shadow: var(--jsp-color-light-green) 0px 0px 0px 1px;
 }
 
-.jsp-showcase-preferences-switch-thumb {
+.jsp-showcase-preferences-switch-green-thumb {
   position: absolute;
   content: "";
   height: 14px;
@@ -693,14 +708,21 @@
   animation-iteration-count: infinite;
 }
 
-.jsp-showcase-endings-switch-thumb-anim {
-  animation-name: jsp-anim-showcase-preferences-endings-switch-thumb;
-  animation-duration: 8s;
-  animation-timing-function: var(--jsp-curve-smoother-fast-start-slow-end);
-  animation-iteration-count: infinite;
+.jsp-showcase-string-skeleton {
+  height: 12px;
+  width: 70px;
+  border-radius: 50px;
+  box-shadow: white 0px 0px 0px 1px;
+  background: repeating-linear-gradient(
+    -60deg,
+    white,
+    white 1px,
+    transparent 1px,
+    transparent 6px
+  );
 }
 
-.jsp-showcase-string-skeleton {
+.jsp-showcase-string-skeleton-light-green {
   height: 12px;
   width: 70px;
   border-radius: 50px;
@@ -709,15 +731,15 @@
     -60deg,
     var(--jsp-color-light-green),
     var(--jsp-color-light-green) 1px,
-    white 1px,
-    white 6px
+    transparent 1px,
+    transparent 6px
   );
 }
 
 .jsp-showcase-preferences-endings-fill {
   height: 100%;
   width: 100%;
-  background-color: var(--jsp-color-light-green);
+  background-color: white;
 }
 
 .jsp-showcase-preferences-slider {
@@ -791,7 +813,7 @@
 }
 
 .jsp-faq-bar {
-  height: 40px;
+  height: 50px;
 }
 
 .jsp-faq-bar-switch + label {

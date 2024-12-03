@@ -29,46 +29,107 @@
       </div>
       <div id="jsp-showcase-download-tiles" class="jsp-flex jsp-flex-direction-row jsp-gap-10px">
         <div class="jsp-tile-glow jsp-100-width">
-          <div id="jsp-showcase" class="jsp-tile jsp-no-padding jsp-100-height jsp-stripes jsp-no-interactions">
-            <div class="jsp-flex jsp-flex-vertical-center jsp-flex-horizontal-center jsp-pos-abs jsp-100-width jsp-100-height">
-              <div class="jsp-flex jsp-flex-direction-column jsp-showcase-white-screen jsp-plain-tile jsp-flex-vertical-bottom jsp-pos-rel">
-                <div class="jsp-100-width jsp-100-height jsp-margin-bottom-16px jsp-overflow-hidden jsp-pos-rel">
-                  <div class="jsp-showcase-skipping-notif-container jsp-showcase-skipping-notif-appear-anim">
-                    <div class="jsp-showcase-skipping-notif-content">
-                      <div class="jsp-flex jsp-flex-direction-row">
-                        <img src="/assets/icon/skip-light-green.svg" style="margin-right: 4px;">
-                        <div class="jsp-showcase-string-skeleton"></div>
+          <div id="jsp-showcase" class="jsp-tile jsp-no-padding jsp-100-height jsp-pos-rel">
+            <div class="jsp-flex jsp-100-height jsp-100-width jsp-flex-vertical-center jsp-flex-horizontal-center jsp-pos-abs" style="z-index: 2">
+              <div class="jsp-features-wrap jsp-no-interactions">
+                <div class="jsp-features-scroller">
+                  <h class="jsp-feature-text">Skip automatically</h>
+                  <h class="jsp-feature-text">Persist fullscreen</h>
+                  <h class="jsp-feature-text">Change preferences</h>
+                  <h class="jsp-feature-text">Skip automatically</h>
+                </div>
+              </div>
+            </div>
+            <div class="jsp-flex jsp-flex-vertical-center jsp-flex-horizontal-center jsp-100-width jsp-100-height jsp-pos-abs">
+              <div class="jsp-showcase-white-screen jsp-pos-rel" style="box-sizing: border-box; z-index: 1">
+                <div class="jsp-flex jsp-flex-direction-column jsp-animated-green-gradient-box jsp-rounded jsp-padding-20px jsp-100-width jsp-100-height" style="box-sizing: border-box; overflow: hidden">
+                  <div class="jsp-100-width jsp-100-height jsp-margin-bottom-16px jsp-overflow-hidden jsp-pos-rel">
+                    <div class="jsp-showcase-skipping-notif-container jsp-showcase-skipping-notif-appear-anim">
+                      <div class="jsp-showcase-skipping-notif-content">
+                        <div class="jsp-flex jsp-flex-direction-row">
+                          <img src="/assets/icon/skip-white.svg" style="margin-right: 4px;">
+                          <div class="jsp-showcase-string-skeleton"></div>
+                        </div>
+                      </div>
+                      <div class="jsp-showcase-skipping-notif-line jsp-showcase-skipping-notif-line-anim"></div>
+                    </div>
+                    <div class="jsp-showcase-preferences-container jsp-showcase-preferences-anim">
+                      <div class="jsp-showcase-preferences">
+                        <div class="jsp-flex jsp-flex-direction-row jsp-flex-vertical-center jsp-padding-10px jsp-padding-bottom-5px">
+                          <div class="jsp-showcase-preferences-switch-white jsp-showcase-openings-switch-anim jsp-margin-right-10px">
+                            <div class="jsp-showcase-preferences-switch-white-thumb jsp-showcase-openings-switch-thumb-anim"></div>
+                          </div>
+                          <div class="jsp-showcase-string-skeleton"></div>
+                        </div>
+                        <div class="jsp-flex jsp-flex-direction-row jsp-flex-vertical-center jsp-padding-10px jsp-padding-top-5px jsp-white-bg">
+                          <div class="jsp-showcase-preferences-switch-green jsp-margin-right-10px">
+                            <div class="jsp-showcase-preferences-switch-green-thumb"></div>
+                          </div>
+                          <div class="jsp-showcase-string-skeleton-light-green"></div>
+                        </div>
+                        <div class="jsp-showcase-preferences-endings-fill"></div>
+                        <div class="jsp-padding-10px">
+                          <div class="jsp-showcase-seekbar-container">
+                            <div class="jsp-showcase-preferences-slider jsp-outline-white-1px"></div>
+                            <div class="jsp-showcase-preferences-slider jsp-pos-abs jsp-top-0 jsp-white-bg jsp-showcase-preferences-slider-fill-anim"></div>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <div class="jsp-showcase-skipping-notif-line jsp-showcase-skipping-notif-line-anim"></div>
                   </div>
-                  <div class="jsp-showcase-preferences-container jsp-showcase-preferences-anim">
-                    <div class="jsp-showcase-preferences">
-                      <div class="jsp-flex jsp-flex-direction-row jsp-flex-vertical-center jsp-padding-10px jsp-padding-bottom-5px">
-                        <div class="jsp-showcase-preferences-switch jsp-showcase-openings-switch-anim jsp-margin-right-10px">
-                          <div class="jsp-showcase-preferences-switch-thumb jsp-showcase-openings-switch-thumb-anim"></div>
-                        </div>
-                        <div class="jsp-showcase-string-skeleton"></div>
-                      </div>
-                      <div class="jsp-flex jsp-flex-direction-row jsp-flex-vertical-center jsp-padding-10px jsp-padding-top-5px jsp-light-green-bg">
-                        <div class="jsp-showcase-preferences-switch jsp-margin-right-10px">
-                          <div class="jsp-showcase-preferences-switch-thumb jsp-showcase-endings-switch-thumb-anim"></div>
-                        </div>
-                        <div class="jsp-showcase-string-skeleton"></div>
-                      </div>
-                      <div class="jsp-showcase-preferences-endings-fill"></div>
-                      <div class="jsp-padding-10px">
-                        <div class="jsp-showcase-seekbar-container">
-                          <div class="jsp-showcase-preferences-slider jsp-outline-green-1px"></div>
-                          <div class="jsp-showcase-preferences-slider jsp-pos-abs jsp-top-0 jsp-animated-green-gradient-box jsp-showcase-preferences-slider-fill-anim"></div>
-                        </div>
-                      </div>
-                    </div>
+                  <div class="jsp-showcase-seekbar-container">
+                    <div class="jsp-showcase-seekbar jsp-outline-white-1px"></div>
+                    <div class="jsp-showcase-seekbar jsp-pos-abs jsp-top-0 jsp-white-bg jsp-showcase-seekbar-anim"></div>
                   </div>
                 </div>
-                <div class="jsp-showcase-seekbar-container">
-                  <div class="jsp-showcase-seekbar jsp-outline-green-1px jsp-white-bg"></div>
-                  <div class="jsp-showcase-seekbar jsp-pos-abs jsp-top-0 jsp-animated-green-gradient-box jsp-showcase-seekbar-anim"></div>
+              </div>
+              <div class="jsp-no-padding jsp-100-height jsp-100-width jsp-stripes jsp-pos-abs" style="z-index: 0"></div>
+            </div>
+          </div>
+          <!--
+          <div id="jsp-showcase" class="jsp-tile jsp-no-padding jsp-100-height jsp-stripes jsp-no-interactions">
+            <div style="position: relative; z-index: -2;" class="jsp-100-width jsp-100-height jsp-animated-green-gradient-box"></div>
+            <div class="jsp-flex jsp-flex-vertical-center jsp-flex-horizontal-center jsp-pos-abs jsp-100-width jsp-100-height">
+              <div class="jsp-flex jsp-flex-vertical-bottom jsp-flex-direction-column jsp-showcase-white-screen jsp-pos-rel jsp-no-padding">
+                <div style="box-sizing: border-box; overflow: hidden; border-radius: 20px;" class="jsp-padding-20px jsp-100-height jsp-100-width jsp-animated-green-gradient-box">
+                  <div class="jsp-100-width jsp-100-height jsp-margin-bottom-16px jsp-overflow-hidden jsp-pos-rel">
+                    <div class="jsp-showcase-skipping-notif-container jsp-showcase-skipping-notif-appear-anim">
+                      <div class="jsp-showcase-skipping-notif-content">
+                        <div class="jsp-flex jsp-flex-direction-row">
+                          <img src="/assets/icon/skip-white.svg" style="margin-right: 4px;">
+                          <div class="jsp-showcase-string-skeleton"></div>
+                        </div>
+                      </div>
+                      <div class="jsp-showcase-skipping-notif-line jsp-showcase-skipping-notif-line-anim"></div>
+                    </div>
+                    <div class="jsp-showcase-preferences-container jsp-showcase-preferences-anim">
+                      <div class="jsp-showcase-preferences">
+                        <div class="jsp-flex jsp-flex-direction-row jsp-flex-vertical-center jsp-padding-10px jsp-padding-bottom-5px">
+                          <div class="jsp-showcase-preferences-switch-white jsp-showcase-openings-switch-anim jsp-margin-right-10px">
+                            <div class="jsp-showcase-preferences-switch-white-thumb jsp-showcase-openings-switch-thumb-anim"></div>
+                          </div>
+                          <div class="jsp-showcase-string-skeleton"></div>
+                        </div>
+                        <div class="jsp-flex jsp-flex-direction-row jsp-flex-vertical-center jsp-padding-10px jsp-padding-top-5px jsp-white-bg">
+                          <div class="jsp-showcase-preferences-switch-white jsp-margin-right-10px">
+                            <div class="jsp-showcase-preferences-switch-white-thumb jsp-showcase-endings-switch-thumb-anim"></div>
+                          </div>
+                          <div class="jsp-showcase-string-skeleton-light-green"></div>
+                        </div>
+                        <div class="jsp-showcase-preferences-endings-fill"></div>
+                        <div class="jsp-padding-10px">
+                          <div class="jsp-showcase-seekbar-container">
+                            <div class="jsp-showcase-preferences-slider jsp-outline-white-1px"></div>
+                            <div class="jsp-showcase-preferences-slider jsp-pos-abs jsp-top-0 jsp-white-bg jsp-showcase-preferences-slider-fill-anim"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="jsp-showcase-seekbar-container">
+                    <div class="jsp-showcase-seekbar jsp-outline-white-1px"></div>
+                    <div class="jsp-showcase-seekbar jsp-pos-abs jsp-top-0 jsp-white-bg jsp-showcase-seekbar-anim"></div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -83,6 +144,7 @@
               </div>
             </div>
           </div>
+          -->
         </div>
         <div class="jsp-tile-glow jsp-100-width">
           <div class="jsp-tile jsp-100-height jsp-flex jsp-flex-direction-column jsp-border-box-sizing">
