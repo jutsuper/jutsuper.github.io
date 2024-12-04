@@ -215,6 +215,10 @@
   padding-top: 0;
 }
 
+.jsp-no-top-margin.jsp-no-top-margin.jsp-no-top-margin {
+  margin-top: 0;
+}
+
 .jsp-no-bottom-padding.jsp-no-bottom-padding.jsp-no-bottom-padding {
   padding-bottom: 0;
 }
@@ -261,6 +265,10 @@
 
 .jsp-r-padding-30px.jsp-r-padding-30px {
   padding-right: 30px;
+}
+
+.jsp-gap-8px.jsp-gap-8px {
+  gap: 8px;
 }
 
 .jsp-gap-10px.jsp-gap-10px {
@@ -330,6 +338,10 @@
   top: 0;
 }
 
+.jsp-margin-top-16px {
+  margin-top: 16px;
+}
+
 .jsp-margin-bottom-16px {
   margin-bottom: 16px;
 }
@@ -360,6 +372,14 @@
   font-weight: bold;
   margin-bottom: 0.5em;
   color: var(--jsp-color-darker-green);
+}
+
+.jsp-black-heading {
+  font-size: 1.5em;
+  font-family: Roboto;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  color: black;
 }
 
 .jsp-animated-green-gradient-box {
@@ -399,6 +419,10 @@
 
 .jsp-max-content-width {
   width: max-content;
+}
+
+.jsp-max-width-100 {
+  max-width: 100%;
 }
 
 .jsp-overflow-auto {
@@ -475,6 +499,10 @@
 
 .jsp-flex {
   display: flex;
+}
+
+.jsp-align-items-start {
+  align-items: start;
 }
 
 .jsp-flex-horizontal-center {
