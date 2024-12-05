@@ -1,9 +1,9 @@
 const LOGGING_ENABLED = true;
 const TRANSLATIONS_PATH = "translations";
-//const OVERRIDE_LANGUAGE = "ru-RU";
+//const OVERRIDE_LANGUAGE = "ru";
 const OVERRIDE_LANGUAGE = null;
 const IGNORED_TRANSLATIONS = [
-  "en-US"
+  "en"
 ]
 
 
@@ -197,7 +197,15 @@ class JutSuper {
   }
 
   getPrefferedLanguage() {
-    return this.nav.language || this.nav.userLanguage;
+    const rawLang = /** @type {string} */ (
+      this.nav.language || this.nav.userLanguage
+    );
+    if (rawLang.includes("-")) {
+      const parts = rawLang.split("-", 1);
+      return parts[0];
+    }
+
+    return rawLang;
   }
 }
 
