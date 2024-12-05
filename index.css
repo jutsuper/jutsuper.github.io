@@ -488,6 +488,8 @@
   width: 100%;
   height: 100%;
   cursor: pointer;
+  color: black;
+  text-decoration: none;
   -webkit-tap-highlight-color: transparent;
   border-radius: 20px;
   transition: all ease var(--jsp-dur-mid);
