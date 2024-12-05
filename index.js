@@ -45,16 +45,17 @@ class JutSuper {
     this.body = this.doc.getElementsByTagName("body")[0];
     this.loadingOverlay = this.doc.querySelector(".jsp-loading-overlay");
     this.faqInputs = [
-      this.doc.querySelector("#jsp-faq-bar-switch-1"),
-      this.doc.querySelector("#jsp-faq-bar-switch-2"),
-      this.doc.querySelector("#jsp-faq-bar-switch-3"),
-      this.doc.querySelector("#jsp-faq-bar-switch-4")
+      this.doc.querySelector("#jsp-faq-bar-switch-where-settings"),
+      this.doc.querySelector("#jsp-faq-bar-switch-settings-explanation"),
+      this.doc.querySelector("#jsp-faq-bar-switch-no-autoplayback"),
+      this.doc.querySelector("#jsp-faq-bar-switch-skipping-ads"),
+      this.doc.querySelector("#jsp-faq-bar-switch-other-websites")
     ];
     this.faqAutoplayBrowsersInputs = [
-      this.doc.querySelector("#jsp-faq-bar-switch-2-1"),
-      this.doc.querySelector("#jsp-faq-bar-switch-2-2"),
-      this.doc.querySelector("#jsp-faq-bar-switch-2-3"),
-      this.doc.querySelector("#jsp-faq-bar-switch-2-4")
+      this.doc.querySelector("#jsp-faq-bar-switch-no-autoplayback-chrome"),
+      this.doc.querySelector("#jsp-faq-bar-switch-no-autoplayback-edge"),
+      this.doc.querySelector("#jsp-faq-bar-switch-no-autoplayback-opera"),
+      this.doc.querySelector("#jsp-faq-bar-switch-no-autoplayback-firefox")
     ];
 
     this.init();
