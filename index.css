@@ -8,6 +8,7 @@
   --jsp-color-darker-green: #8CB660;
   --jsp-color-darker-green-half-transparent: #8CB66080;
   --jsp-dur-slow: .50s;
+  --jsp-dur-mid-slower: .35s;
   --jsp-dur-mid: .25s;
   --jsp-curve-fast-start-slow-end: cubic-bezier(0,.86,.24,.96);
   --jsp-curve-smoother-fast-start-slow-end: cubic-bezier(.11,.88,.42,.97);
@@ -489,7 +490,7 @@
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
   border-radius: 20px;
-  transition: all ease 0.2s;
+  transition: all ease var(--jsp-dur-mid);
   box-shadow: var(--jsp-color-light-green) 0px 0px 0px 1px;
 }
 
@@ -855,7 +856,7 @@
 
 .jsp-faq-dropdown {
   width: 14px;
-  transition: all var(--jsp-dur-slow) var(--jsp-curve-fast-start-slow-end)
+  transition: all var(--jsp-dur-mid-slower) var(--jsp-curve-fast-start-slow-end)
 }
 
 .jsp-faq-bar-switch:checked + label .jsp-faq-dropdown {
@@ -870,7 +871,7 @@
   height: 100%;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
-  transition: var(--jsp-dur-slow) var(--jsp-curve-fast-start-slow-end);
+  transition: var(--jsp-dur-mid-slower) var(--jsp-curve-fast-start-slow-end);
 }
 
 .jsp-faq-bar-switch:checked + label {
@@ -881,7 +882,7 @@
   display: grid;
   grid-template-rows: 0fr;
   overflow: hidden;
-  transition: var(--jsp-dur-slow) var(--jsp-curve-fast-start-slow-end);
+  transition: var(--jsp-dur-mid-slower) var(--jsp-curve-fast-start-slow-end);
 }
 
 .jsp-faq-bar + div div {
