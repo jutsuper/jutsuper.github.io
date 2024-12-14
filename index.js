@@ -75,7 +75,9 @@ class JutSuper {
     }
 
     if (this.loc.hash === "#faq-autoplay") {
-      const autoplayFaqInput = this.faqInputs[1];
+      const autoplayFaqInput = this.faqInputs.find(
+        elm => elm.id == "jsp-faq-bar-switch-no-autoplayback"
+      );
       autoplayFaqInput.checked = true;
       const autoplayFaqTitle = this.doc.getElementsByClassName(
         "jsp-text-no-autoplayback-q"
