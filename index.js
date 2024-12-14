@@ -4,7 +4,7 @@ const TRANSLATIONS_PATH = "translations";
 const OVERRIDE_LANGUAGE = null;
 const IGNORED_TRANSLATIONS = [
   "en"
-]
+];
 
 
 class Logger {
@@ -81,7 +81,7 @@ class JutSuper {
       autoplayFaqInput.checked = true;
       const autoplayFaqTitle = this.doc.getElementsByClassName(
         "jsp-text-no-autoplayback-q"
-      )[0]
+      )[0];
       autoplayFaqTitle.scrollIntoView({ behavior: "smooth", block: "start" });
     }
 
